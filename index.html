@@ -173,7 +173,7 @@
 
       <header>
         <h1>Store Check</h1>
-        <p>Elige Cadena y Estado. Coloca el precio regular por producto.</p>
+        <p>Elige Cadena y Estado. Coloca el precio OFERTA.</p>
       </header>
 
       <form id="formPrecios" autocomplete="off">
@@ -187,7 +187,12 @@
             </select>
           </div>
 
-          
+          <div class="col-4">
+            <label for="familia">Familia</label>
+            <select id="familia" name="familia">
+              <option value="" selected>Todas</option>
+            </select>
+          </div>
 
           <div class="col-4">
             <label for="estado">Estado</label>
@@ -201,7 +206,7 @@
         <section class="productos-section">
           <label style="margin:0;">Productos</label>
           <div class="hint">
-            Lista De Productos Cadena. Columnas: <b>Producto</b>, <b>Marca</b> y <b>Precio</b> (2 decimales).
+            Lista fija por Cadena. Columnas: <b>Producto</b>, <b>Marca</b> y <b>Precio</b> (2 decimales).
           </div>
 
           <div class="tabla-wrapper">
@@ -259,7 +264,8 @@
         PRODUCTOS_POR_CADENA[cadena] = (PRODUCTOS_POR_CADENA[cadena]||[]).map(item=>({
           producto: item.Producto ?? item.producto ?? '',
           marca: item.Marca ?? item.marca ?? '',
-          segmento: item.Segmento ?? item.segmento ?? item.Familia ?? item.familia ?? ''
+          segmento: item.Segmento ?? item.segmento ?? item.Familia ?? item.familia ?? '',
+          codigo: item['Codigo Producto'] ?? item.codigo ?? item.Codigo ?? ''
         }));
       });
     }
@@ -288,10 +294,18 @@
     const tablaBody = document.querySelector('#tablaProductos tbody');
     const tpl = document.getElementById('tplFila');
     const selCadena = document.getElementById('cadena');
+    const selFamilia = document.getElementById('familia');
     const selEstado = document.getElementById('estado');
     const btnLimpiar = document.getElementById('btnLimpiar');
     const errorsEl = document.getElementById('errors');
     const okEl = document.getElementById('success');
+    const preciosMem = new Map();
+
+    function claveItem(cadena, it){
+      const cod = (it.codigo || '').trim();
+      if(cod) return `${cadena}::${cod}`;
+      return `${cadena}::${it.producto || ''}::${it.marca || ''}`;
+    }
 
     function mostrarMsg(tipo,txt){
       if(tipo==='error'){
@@ -324,32 +338,60 @@
         });
     }
 
-    // Ya no usamos filtro por segmento en la UI; la tabla mostrará todos los productos ordenados.
+    function poblarFamilias(cadena){
+      selFamilia.innerHTML = '<option value="" selected>Todas</option>';
+      if(!cadena) return;
+      const set = new Set();
+      (PRODUCTOS_POR_CADENA[cadena]||[]).forEach(it=>{
+        if(it.segmento) set.add(it.segmento);
+      });
+      [...set].sort((a,b)=>a.localeCompare(b)).forEach(f=>{
+        const o=document.createElement('option');
+        o.value=f; o.textContent=f;
+        selFamilia.appendChild(o);
+      });
+    }
 
     function limpiarTabla(){ tablaBody.innerHTML=''; }
 
-    function cargarTabla(cadena){
+    function cargarTabla(cadena, familia){
       limpiarTabla();
-      const items = (PRODUCTOS_POR_CADENA[cadena]||[]).slice();
+      let items = (PRODUCTOS_POR_CADENA[cadena]||[]).slice();
+      if(familia) items = items.filter(it=>it.segmento===familia);
 
       items.forEach(it=>{
         const node=tpl.content.cloneNode(true);
+        node.querySelector('tr').dataset.codigo=it.codigo||'';
         node.querySelector('.producto').value=it.producto||'';
         node.querySelector('.marca').value=it.marca||'';
         let pr=node.querySelector('.precio');
-        pr.addEventListener('input',e=>e.target.value=normalizarPrecio(e.target.value));
+        const key = claveItem(cadena, it);
+        if(preciosMem.has(key)) pr.value = preciosMem.get(key);
+        pr.addEventListener('input',e=>{
+          const v = normalizarPrecio(e.target.value);
+          e.target.value = v;
+          if(v) preciosMem.set(key, v);
+          else preciosMem.delete(key);
+        });
         tablaBody.appendChild(node);
       });
     }
 
     /* === EVENTOS === */
     selCadena.addEventListener('change',()=>{
-      cargarTabla(selCadena.value);
+      poblarFamilias(selCadena.value);
+      cargarTabla(selCadena.value, selFamilia.value);
+    });
+
+    selFamilia.addEventListener('change',()=>{
+      cargarTabla(selCadena.value, selFamilia.value);
     });
 
     btnLimpiar.addEventListener('click',()=>{
       document.getElementById('formPrecios').reset();
+      poblarFamilias('');
       limpiarTabla();
+      preciosMem.clear();
       mostrarMsg('success','Formulario reiniciado.');
     });
 
@@ -367,6 +409,7 @@
         const iMarca = idx('Marca');
         const iProducto = idx('Producto');
         const iFamilia = idx('Familia');
+        const iCodigo = idx('Codigo Producto');
 
         PRODUCTOS_POR_CADENA = {};
 
@@ -376,13 +419,15 @@
           const marca = (cols[iMarca]||'').trim();
           const producto = (cols[iProducto]||'').trim();
           const familia = (cols[iFamilia]||'').trim();
+          const codigo = (cols[iCodigo]||'').trim();
 
           if(!cadena || !producto) continue;
           if(!PRODUCTOS_POR_CADENA[cadena]) PRODUCTOS_POR_CADENA[cadena]=[];
           PRODUCTOS_POR_CADENA[cadena].push({
             producto,
             marca,
-            segmento: familia
+            segmento: familia,
+            codigo
           });
         }
 
@@ -393,11 +438,14 @@
       }
     }
 
+    const ENDPOINT = "https://script.google.com/macros/s/AKfycbz0nlveTzDA5sAn9O6ToIit-T_maUhwAyoyhN-XsKeTKC5gLFFVeIghs00aGHMqcbyXKA/exec";
+    const API_TOKEN = "10152021"; // el mismo del Apps Script
+
     poblarEstados();
     cargarProductosDesdeTxt();
 
     /* === ENVÍO === */
-    document.getElementById('formPrecios').addEventListener('submit',e=>{
+    document.getElementById('formPrecios').addEventListener('submit', async e=>{
       e.preventDefault();
       const cadena=selCadena.value;
       const estado=selEstado.value;
@@ -413,31 +461,52 @@
       for(const tr of filas){
         const prod=tr.querySelector('.producto').value;
         const marca=tr.querySelector('.marca').value;
+        const codigo=tr.dataset.codigo||'';
         let pr=normalizarPrecio(tr.querySelector('.precio').value.trim());
         if(!pr) continue;
         pr=formateaDinero(pr);
-        items.push({prod,marca,pr});
+        items.push({prod,marca,codigo,pr});
       }
 
       if(items.length===0)
         return mostrarMsg('error','Agrega al menos un precio.');
 
-      const lineas=[];
-      lineas.push(`*Cadena:* ${cadena}`);
-      lineas.push(`*Estado:* ${estado}`);
-      lineas.push('');
-      lineas.push('*Productos y precios*');
+      const familia = selFamilia.value || '';
 
-      for(const it of items)
-        lineas.push(`• ${it.prod} (${it.marca}): $${it.pr}`);
+      const payload = {
+        token: API_TOKEN,
+        cadena,
+        estado,
+        familia,
+        items
+      };
 
-      const texto=encodeURIComponent(lineas.join('\n'));
-      const url=`https://wa.me/?text=${texto}`;
+      const ok = navigator.sendBeacon(
+        ENDPOINT,
+        new Blob([JSON.stringify(payload)], { type: 'text/plain;charset=utf-8' })
+      );
 
-      window.open(url,'_blank','noopener');
-      mostrarMsg('success','Abriendo WhatsApp...');
+      if(!ok){
+        try{
+          await fetch(ENDPOINT, {
+            method: 'POST',
+            mode: 'no-cors',
+            keepalive: true,
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify(payload)
+          });
+        }catch(err){
+          return mostrarMsg('error','No se pudo enviar (sin señal o bloqueado). Intenta de nuevo.');
+        }
+      }
+      document.getElementById('formPrecios').reset();
+      poblarFamilias('');
+      limpiarTabla();
+      preciosMem.clear();
+      mostrarMsg('success','Enviado con exito ✅');
     });
   </script>
 
 </body>
 </html>
+
