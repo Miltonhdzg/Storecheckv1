@@ -70,23 +70,46 @@
     }
 
     select,
-    input[type=text]{
+    input[type=text],
+    textarea{
       width:100%; padding:10px 12px;
       border-radius:10px; border:1px solid var(--border);
       background:#0b1223; color:var(--text);
       outline:none;
     }
 
+    textarea{
+      resize:none;
+      line-height:1.25;
+      white-space:normal;
+      overflow-wrap:anywhere;
+    }
+
     select:focus,
     input:focus{ border-color:#334155 }
 
     /* === TABLA === */
-    table{ width:100%; border-collapse:collapse }
+    table{ width:100%; border-collapse:collapse; table-layout:fixed }
     th,td{
       border-bottom:1px solid var(--border);
-      padding:10px 8px; text-align:left;
+      padding:10px 8px; text-align:left; vertical-align:top;
     }
     th{ color:var(--muted); font-weight:600; font-size:13px }
+
+    #tablaProductos th:nth-child(1),
+    #tablaProductos td:nth-child(1){ width:35% }
+
+    #tablaProductos th:nth-child(2),
+    #tablaProductos td:nth-child(2){ width:32.5% }
+
+    #tablaProductos th:nth-child(3),
+    #tablaProductos td:nth-child(3){ width:32.5% }
+
+    #tablaProductos .producto{
+      min-height:60px;
+      height:auto;
+      word-break:break-word;
+    }
 
     /* WRAPPER CON SCROLL */
     .productos-section{
@@ -150,9 +173,11 @@
       .grid{ gap:8px }
       label{ font-size:12px; margin:4px 0 }
 
-      select, input[type=text]{ padding:8px 10px; font-size:14px }
+      select, input[type=text], textarea{ padding:8px 10px; font-size:14px }
 
       th,td{ padding:6px 4px; font-size:12px }
+
+      #tablaProductos .producto{ min-height:72px }
 
       .btn{ padding:8px 10px; font-size:13px }
     }
@@ -213,9 +238,9 @@
             <table id="tablaProductos">
               <thead>
                 <tr>
-                  <th style="width:50%;">Producto</th>
-                  <th style="width:25%;">Promoción</th>
-                  <th style="width:25%;">Precio</th>
+                  <th style="width:35%;">Producto</th>
+                  <th style="width:32.5%;">Promoción</th>
+                  <th style="width:32.5%;">Precio</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -243,10 +268,10 @@
   <!-- === TEMPLATE DE FILA === -->
   <template id="tplFila">
     <tr>
-      <td><input type="text" class="producto" readonly /></td>
+      <td><textarea class="producto" rows="3" readonly></textarea></td>
       <td>
         <select class="promo">
-          <option value="Oferta" selected>Sin Oferta</option>
+          <option value="Sin Oferta" selected>Sin Oferta</option>
           <option value="2x1">2x1</option>
           <option value="3x2">3x2</option>
           <option value="5x3">5x3</option>          
