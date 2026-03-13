@@ -206,16 +206,16 @@
         <section class="productos-section">
           <label style="margin:0;">Productos</label>
           <div class="hint">
-            Lista fija por Cadena. Columnas: <b>Producto</b>, <b>Marca</b> y <b>Precio</b> (2 decimales).
+            Lista fija por Cadena. Columnas: <b>Producto</b>, <b>Promoción</b> y <b>Precio</b> (2 decimales).
           </div>
 
           <div class="tabla-wrapper">
             <table id="tablaProductos">
               <thead>
                 <tr>
-                  <th style="width:60%;">Producto</th>
-                  <th style="width:20%;">Marca</th>
-                  <th style="width:20%;">Precio</th>
+                  <th style="width:50%;">Producto</th>
+                  <th style="width:25%;">Promoción</th>
+                  <th style="width:25%;">Precio</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -244,7 +244,14 @@
   <template id="tplFila">
     <tr>
       <td><input type="text" class="producto" readonly /></td>
-      <td><input type="text" class="marca" readonly /></td>
+      <td>
+        <select class="promo">
+          <option value="Oferta" selected>Sin Oferta</option>
+          <option value="2x1">2x1</option>
+          <option value="3x2">3x2</option>
+          <option value="5x3">5x3</option>          
+        </select>
+      </td>
       <td><input type="text" class="precio" placeholder="0.00" inputmode="decimal" /></td>
     </tr>
   </template>
@@ -258,6 +265,7 @@
 
     const DATA_URL = 'store_check_v2.txt';
     let PRODUCTOS_POR_CADENA = {};
+    const PROMOCIONES = ['Oferta', '2x1', '3x2', '5x3'];
 
     function normalizarDatos(){
       Object.keys(PRODUCTOS_POR_CADENA).forEach(cadena=>{
@@ -300,6 +308,7 @@
     const errorsEl = document.getElementById('errors');
     const okEl = document.getElementById('success');
     const preciosMem = new Map();
+    const promosMem = new Map();
 
     function claveItem(cadena, it){
       const cod = (it.codigo || '').trim();
@@ -362,16 +371,21 @@
       items.forEach(it=>{
         const node=tpl.content.cloneNode(true);
         node.querySelector('tr').dataset.codigo=it.codigo||'';
+        node.querySelector('tr').dataset.marca=it.marca||'';
         node.querySelector('.producto').value=it.producto||'';
-        node.querySelector('.marca').value=it.marca||'';
         let pr=node.querySelector('.precio');
+        let promoSel=node.querySelector('.promo');
         const key = claveItem(cadena, it);
         if(preciosMem.has(key)) pr.value = preciosMem.get(key);
+        promoSel.value = promosMem.get(key) || PROMOCIONES[0];
         pr.addEventListener('input',e=>{
           const v = normalizarPrecio(e.target.value);
           e.target.value = v;
           if(v) preciosMem.set(key, v);
           else preciosMem.delete(key);
+        });
+        promoSel.addEventListener('change', e=>{
+          promosMem.set(key, e.target.value || PROMOCIONES[0]);
         });
         tablaBody.appendChild(node);
       });
@@ -392,6 +406,7 @@
       poblarFamilias('');
       limpiarTabla();
       preciosMem.clear();
+      promosMem.clear();
       mostrarMsg('success','Formulario reiniciado.');
     });
 
@@ -460,12 +475,13 @@
 
       for(const tr of filas){
         const prod=tr.querySelector('.producto').value;
-        const marca=tr.querySelector('.marca').value;
+        const marca=tr.dataset.marca||'';
+        const promo=tr.querySelector('.promo').value || PROMOCIONES[0];
         const codigo=tr.dataset.codigo||'';
         let pr=normalizarPrecio(tr.querySelector('.precio').value.trim());
         if(!pr) continue;
         pr=formateaDinero(pr);
-        items.push({prod,marca,codigo,pr});
+        items.push({prod,marca,promo,codigo,pr});
       }
 
       if(items.length===0)
@@ -503,10 +519,10 @@
       poblarFamilias('');
       limpiarTabla();
       preciosMem.clear();
+      promosMem.clear();
       mostrarMsg('success','Enviado con exito ✅');
     });
   </script>
 
 </body>
 </html>
-
