@@ -87,25 +87,25 @@ Mi Tienda Del Ahorro	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
 Mi Tienda Del Ahorro	GREAT DAY	XXG	4	40	Panal Bebe	GREAT DAY XXG 4/40	86
 Mi Tienda Del Ahorro	GREAT DAY	XG	4	80	Panal Bebe	GREAT DAY XG 4/80	87
 Mi Tienda Del Ahorro	GREAT DAY	XXG	4	80	Panal Bebe	GREAT DAY XXG 4/80	88
-Mi Tienda Del Ahorro	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Mi Tienda Del Ahorro	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Mi Tienda Del Ahorro	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Mi Tienda Del Ahorro	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-Mi Tienda Del Ahorro	Chicolastic	NA		120	Toalla Húmeda	Chicolastic NA/120	93
-Mi Tienda Del Ahorro	BB Tips	NA		100	Toalla Húmeda	BB Tips NA/100	94
-Mi Tienda Del Ahorro	Babysec	NA		20	Toalla Húmeda	Babysec NA/20	95
-Mi Tienda Del Ahorro	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-Mi Tienda Del Ahorro	Soft Dreams	NA		80	Toalla Húmeda	Soft Dreams NA/80	97
-Mi Tienda Del Ahorro	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-Mi Tienda Del Ahorro	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Mi Tienda Del Ahorro	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Mi Tienda Del Ahorro	My Bebe	NA		80	Toalla Húmeda	My Bebe NA/80	101
-Mi Tienda Del Ahorro	Kanggis	NA		120	Toalla Húmeda	Kanggis NA/120	102
-Mi Tienda Del Ahorro	BabySec	NA		50	Toalla Húmeda	BabySec NA/50	103
-Mi Tienda Del Ahorro	GREAT DAY	NA		240	Toalla Húmeda	GREAT DAY NA/240	104
-Mi Tienda Del Ahorro	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-Mi Tienda Del Ahorro	Kotex Anatómica con Alas	NA		10	Toalla Femenina	Kotex Anatómica con Alas NA/10	106
-Mi Tienda Del Ahorro	Kotex Anatómica sin Alas	NA		10	Toalla Femenina	Kotex Anatómica sin Alas NA/10	107
+Mi Tienda Del Ahorro	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Mi Tienda Del Ahorro	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Mi Tienda Del Ahorro	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Mi Tienda Del Ahorro	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+Mi Tienda Del Ahorro	Chicolastic	NA		120	Toalla H√∫meda	Chicolastic NA/120	93
+Mi Tienda Del Ahorro	BB Tips	NA		100	Toalla H√∫meda	BB Tips NA/100	94
+Mi Tienda Del Ahorro	Babysec	NA		20	Toalla H√∫meda	Babysec NA/20	95
+Mi Tienda Del Ahorro	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+Mi Tienda Del Ahorro	Soft Dreams	NA		80	Toalla H√∫meda	Soft Dreams NA/80	97
+Mi Tienda Del Ahorro	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+Mi Tienda Del Ahorro	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Mi Tienda Del Ahorro	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Mi Tienda Del Ahorro	My Bebe	NA		80	Toalla H√∫meda	My Bebe NA/80	101
+Mi Tienda Del Ahorro	Kanggis	NA		120	Toalla H√∫meda	Kanggis NA/120	102
+Mi Tienda Del Ahorro	BabySec	NA		50	Toalla H√∫meda	BabySec NA/50	103
+Mi Tienda Del Ahorro	GREAT DAY	NA		240	Toalla H√∫meda	GREAT DAY NA/240	104
+Mi Tienda Del Ahorro	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+Mi Tienda Del Ahorro	Kotex Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica con Alas NA/10	106
+Mi Tienda Del Ahorro	Kotex Anat√≥mica sin Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica sin Alas NA/10	107
 Mi Tienda Del Ahorro	Kotex Nocturna	NA		10	Toalla Femenina	Kotex Nocturna NA/10	108
 Mi Tienda Del Ahorro	Fiore sin limites con alas	NA		14	Toalla Femenina	Fiore sin limites con alas NA/14	109
 Mi Tienda Del Ahorro	Fiore Sin limites sin alas	NA		8	Toalla Femenina	Fiore Sin limites sin alas NA/8	110
@@ -125,8 +125,8 @@ Mi Tienda Del Ahorro	Affective Protect	M	4	10	Panal Adulto	Affective Protect M 4
 Mi Tienda Del Ahorro	Affective Ropa Interior	M	4	10	Panal Adulto	Affective Ropa Interior M 4/10	124
 Mi Tienda Del Ahorro	Affective Ropa Interior	G	4	10	Panal Adulto	Affective Ropa Interior G 4/10	125
 Mi Tienda Del Ahorro	Cotidian	CC	4	10	Panal Adulto	Cotidian CC 4/10	126
-Mi Tienda Del Ahorro	Cotidian clásico	M	4	10	Panal Adulto	Cotidian clásico M 4/10	127
-Mi Tienda Del Ahorro	Cotidian clásico	G	4	10	Panal Adulto	Cotidian clásico G 4/10	128
+Mi Tienda Del Ahorro	Cotidian cl√°sico	M	4	10	Panal Adulto	Cotidian cl√°sico M 4/10	127
+Mi Tienda Del Ahorro	Cotidian cl√°sico	G	4	10	Panal Adulto	Cotidian cl√°sico G 4/10	128
 Mi Tienda Del Ahorro	Tena Confort	G	4	10	Panal Adulto	Tena Confort G 4/10	129
 Mi Tienda Del Ahorro	Tena	PREDOBLADO		10	Panal Adulto	Tena PREDOBLADO/10	130
 Mi Tienda Del Ahorro	Tena maxi protect	CH-M		10	Panal Adulto	Tena maxi protect CH-M/10	131
@@ -194,17 +194,17 @@ Smart	Soft Dreams	G	4	36	Panal Bebe	Soft Dreams G 4/36	76
 Smart	Soft Dreams	XG	4	34	Panal Bebe	Soft Dreams XG 4/34	77
 Smart	GREAT DAY	G	4	40	Panal Bebe	GREAT DAY G 4/40	84
 Smart	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
-Smart	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Smart	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Smart	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Smart	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Smart	BB Tips	NA		100	Toalla Húmeda	BB Tips NA/100	94
-Smart	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Smart	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Smart	Dodys relajante	NA		100	Toalla Húmeda	Dodys relajante NA/100	143
-Smart	Baby Bebé			80	Toalla Húmeda	Baby Bebé/80	144
-Smart	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-Smart	Kotex Anatómica con Alas	NA		10	Toalla Femenina	Kotex Anatómica con Alas NA/10	106
+Smart	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Smart	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Smart	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Smart	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Smart	BB Tips	NA		100	Toalla H√∫meda	BB Tips NA/100	94
+Smart	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Smart	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Smart	Dodys relajante	NA		100	Toalla H√∫meda	Dodys relajante NA/100	143
+Smart	Baby Beb√©			80	Toalla H√∫meda	Baby Beb√©/80	144
+Smart	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+Smart	Kotex Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica con Alas NA/10	106
 Smart	Fiore sin limites con alas	NA		8	Toalla Femenina	Fiore sin limites con alas NA/8	145
 Smart	Fiore Sin limites sin alas	NA		14	Toalla Femenina	Fiore Sin limites sin alas NA/14	146
 Smart	Fiore Nocturna con alas	NA		16	Toalla Femenina	Fiore Nocturna con alas NA/16	111
@@ -241,13 +241,13 @@ Arteli	Movilastic	XG	4	40	Panal Bebe	Movilastic XG 4/40	22
 Arteli	Movilastic	XXG	4	40	Panal Bebe	Movilastic XXG 4/40	23
 Arteli	Comodisec	G	2	80	Panal Bebe	Comodisec G 2/80	29
 Arteli	Comodisec	XXG	2	80	Panal Bebe	Comodisec XXG 2/80	31
-Arteli	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Arteli	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Arteli	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Arteli	Chicolastic	NA		120	Toalla Húmeda	Chicolastic NA/120	93
-Arteli	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Arteli	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Arteli	My Bebe	NA		80	Toalla Húmeda	My Bebe NA/80	101
+Arteli	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Arteli	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Arteli	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Arteli	Chicolastic	NA		120	Toalla H√∫meda	Chicolastic NA/120	93
+Arteli	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Arteli	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Arteli	My Bebe	NA		80	Toalla H√∫meda	My Bebe NA/80	101
 Arteli	Kotex Nocturna	NA		10	Toalla Femenina	Kotex Nocturna NA/10	108
 Arteli	Fiore sin limites con alas	NA		14	Toalla Femenina	Fiore sin limites con alas NA/14	109
 Arteli	Fiore Sin limites sin alas	NA		14	Toalla Femenina	Fiore Sin limites sin alas NA/14	146
@@ -262,8 +262,8 @@ Arteli	Affective Advance	G	4	10	Panal Adulto	Affective Advance G 4/10	121
 Arteli	Affective Predoblado	PREDOBLADO	4	10	Panal Adulto	Affective Predoblado PREDOBLADO 4/10	122
 Arteli	Affective Protect	M	4	10	Panal Adulto	Affective Protect M 4/10	123
 Arteli	Affective Protect	G	4	10	Panal Adulto	Affective Protect G 4/10	151
-Arteli	Cotidian clásico	M	4	10	Panal Adulto	Cotidian clásico M 4/10	127
-Arteli	Cotidian clásico	G	4	10	Panal Adulto	Cotidian clásico G 4/10	128
+Arteli	Cotidian cl√°sico	M	4	10	Panal Adulto	Cotidian cl√°sico M 4/10	127
+Arteli	Cotidian cl√°sico	G	4	10	Panal Adulto	Cotidian cl√°sico G 4/10	128
 Arteli	Cotidian plus	M	4	10	Panal Adulto	Cotidian plus M 4/10	152
 Arteli	Cotidian plus	G	4	10	Panal Adulto	Cotidian plus G 4/10	153
 Arteli	Tena Confort	CH	4	10	Panal Adulto	Tena Confort CH 4/10	154
@@ -350,23 +350,23 @@ Alsuper	Babysec Ultra	M	4	40	Panal Bebe	Babysec Ultra M 4/40	71
 Alsuper	Babysec Ultra	G	4	40	Panal Bebe	Babysec Ultra G 4/40	72
 Alsuper	Babysec Ultra	XG	4	40	Panal Bebe	Babysec Ultra XG 4/40	73
 Alsuper	Babysec Ultra	XXG	4	40	Panal Bebe	Babysec Ultra XXG 4/40	74
-Alsuper	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Alsuper	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Alsuper	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Alsuper	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Alsuper	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-Alsuper	Chicolastic	NA		120	Toalla Húmeda	Chicolastic NA/120	93
-Alsuper	BB Tips	NA		100	Toalla Húmeda	BB Tips NA/100	94
-Alsuper	Babysec	NA		20	Toalla Húmeda	Babysec NA/20	95
-Alsuper	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-Alsuper	Soft Dreams	NA		80	Toalla Húmeda	Soft Dreams NA/80	97
-Alsuper	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-Alsuper	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Alsuper	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Alsuper	My Bebe	NA		80	Toalla Húmeda	My Bebe NA/80	101
-Alsuper	Kanggis	NA		120	Toalla Húmeda	Kanggis NA/120	102
-Alsuper	Kotex Anatómica con Alas	NA		10	Toalla Femenina	Kotex Anatómica con Alas NA/10	106
-Alsuper	Kotex Anatómica sin Alas	NA		10	Toalla Femenina	Kotex Anatómica sin Alas NA/10	107
+Alsuper	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Alsuper	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Alsuper	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Alsuper	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Alsuper	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+Alsuper	Chicolastic	NA		120	Toalla H√∫meda	Chicolastic NA/120	93
+Alsuper	BB Tips	NA		100	Toalla H√∫meda	BB Tips NA/100	94
+Alsuper	Babysec	NA		20	Toalla H√∫meda	Babysec NA/20	95
+Alsuper	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+Alsuper	Soft Dreams	NA		80	Toalla H√∫meda	Soft Dreams NA/80	97
+Alsuper	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+Alsuper	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Alsuper	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Alsuper	My Bebe	NA		80	Toalla H√∫meda	My Bebe NA/80	101
+Alsuper	Kanggis	NA		120	Toalla H√∫meda	Kanggis NA/120	102
+Alsuper	Kotex Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica con Alas NA/10	106
+Alsuper	Kotex Anat√≥mica sin Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica sin Alas NA/10	107
 Alsuper	Kotex Nocturna	NA		10	Toalla Femenina	Kotex Nocturna NA/10	108
 Alsuper	Fiore sin limites con alas	NA		8	Toalla Femenina	Fiore sin limites con alas NA/8	145
 Alsuper	Fiore Sin limites sin alas	NA		8	Toalla Femenina	Fiore Sin limites sin alas NA/8	110
@@ -385,8 +385,8 @@ Alsuper	Affective Predoblado	PREDOBLADO	4	10	Panal Adulto	Affective Predoblado P
 Alsuper	Affective Protect	M	4	10	Panal Adulto	Affective Protect M 4/10	123
 Alsuper	Affective Protect	G	4	10	Panal Adulto	Affective Protect G 4/10	151
 Alsuper	Cotidian	CC	4	10	Panal Adulto	Cotidian CC 4/10	126
-Alsuper	Cotidian clásico	M	4	10	Panal Adulto	Cotidian clásico M 4/10	127
-Alsuper	Cotidian clásico	G	4	10	Panal Adulto	Cotidian clásico G 4/10	128
+Alsuper	Cotidian cl√°sico	M	4	10	Panal Adulto	Cotidian cl√°sico M 4/10	127
+Alsuper	Cotidian cl√°sico	G	4	10	Panal Adulto	Cotidian cl√°sico G 4/10	128
 Alsuper	Tena Confort	M	4	10	Panal Adulto	Tena Confort M 4/10	150
 Alsuper	Tena Confort	G	4	10	Panal Adulto	Tena Confort G 4/10	129
 Alsuper	Tena maxi protect	CH-M		10	Panal Adulto	Tena maxi protect CH-M/10	131
@@ -449,14 +449,14 @@ Chedraui	Soft Dreams	XG	2	56	Panal Bebe	Soft Dreams XG 2/56	81
 Chedraui	GREAT DAY	G	4	40	Panal Bebe	GREAT DAY G 4/40	84
 Chedraui	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
 Chedraui	GREAT DAY	XXG	4	40	Panal Bebe	GREAT DAY XXG 4/40	86
-Chedraui	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Chedraui	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Chedraui	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Chedraui	Chicolastic	NA		120	Toalla Húmeda	Chicolastic NA/120	93
-Chedraui	BB Tips	NA		100	Toalla Húmeda	BB Tips NA/100	94
-Chedraui	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Chedraui	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Chedraui	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
+Chedraui	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Chedraui	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Chedraui	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Chedraui	Chicolastic	NA		120	Toalla H√∫meda	Chicolastic NA/120	93
+Chedraui	BB Tips	NA		100	Toalla H√∫meda	BB Tips NA/100	94
+Chedraui	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Chedraui	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Chedraui	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
 Chedraui	Depend plenitud	G		10	Panal Adulto	Depend plenitud G/10	116
 Chedraui	Diapro predoblado gel	PREDOBLADO		10	Panal Adulto	Diapro predoblado gel PREDOBLADO/10	119
 Chedraui	Affective Advance	M	4	10	Panal Adulto	Affective Advance M 4/10	120
@@ -540,23 +540,23 @@ Merco	BRAZIL	CH	4	40	Panal Bebe	BRAZIL CH 4/40	166
 Merco	BRAZIL	MED	4	40	Panal Bebe	BRAZIL MED 4/40	167
 Merco	BRAZIL	G	4	40	Panal Bebe	BRAZIL G 4/40	168
 Merco	BRAZIL	XG	4	40	Panal bebe	BRAZIL XG 4/40	169
-Merco	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Merco	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Merco	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-Merco	Chicolastic	NA		120	Toalla Húmeda	Chicolastic NA/120	93
-Merco	BB Tips	NA		100	Toalla Húmeda	BB Tips NA/100	94
-Merco	Babysec	NA		20	Toalla Húmeda	Babysec NA/20	95
-Merco	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-Merco	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-Merco	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Merco	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Merco	Dodys relajante	NA		100	Toalla Húmeda	Dodys relajante NA/100	143
-Merco	SKIN BALANCE	NA		120	Toalla Húmeda	SKIN BALANCE NA/120	170
-Merco	ULTRA SENSITIVE	NA		80	Toalla Húmeda	ULTRA SENSITIVE NA/80	171
-Merco	BABY SKY	NA		80	Toalla Húmeda	BABY SKY NA/80	172
-Merco	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-Merco	Kotex Anatómica con Alas	NA		10	Toalla Femenina	Kotex Anatómica con Alas NA/10	106
-Merco	Kotex Anatómica sin Alas	NA		10	Toalla Femenina	Kotex Anatómica sin Alas NA/10	107
+Merco	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Merco	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Merco	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+Merco	Chicolastic	NA		120	Toalla H√∫meda	Chicolastic NA/120	93
+Merco	BB Tips	NA		100	Toalla H√∫meda	BB Tips NA/100	94
+Merco	Babysec	NA		20	Toalla H√∫meda	Babysec NA/20	95
+Merco	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+Merco	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+Merco	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Merco	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Merco	Dodys relajante	NA		100	Toalla H√∫meda	Dodys relajante NA/100	143
+Merco	SKIN BALANCE	NA		120	Toalla H√∫meda	SKIN BALANCE NA/120	170
+Merco	ULTRA SENSITIVE	NA		80	Toalla H√∫meda	ULTRA SENSITIVE NA/80	171
+Merco	BABY SKY	NA		80	Toalla H√∫meda	BABY SKY NA/80	172
+Merco	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+Merco	Kotex Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica con Alas NA/10	106
+Merco	Kotex Anat√≥mica sin Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica sin Alas NA/10	107
 Merco	Kotex Nocturna	NA		10	Toalla Femenina	Kotex Nocturna NA/10	108
 Merco	Fiore sin limites con alas	NA		8	Toalla Femenina	Fiore sin limites con alas NA/8	145
 Merco	Fiore sin limites con alas	NA		14	Toalla Femenina	Fiore sin limites con alas NA/14	109
@@ -668,24 +668,24 @@ HEB	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
 HEB	GREAT DAY	XXG	4	40	Panal Bebe	GREAT DAY XXG 4/40	86
 HEB	GREAT DAY	XG	4	80	Panal Bebe	GREAT DAY XG 4/80	87
 HEB	GREAT DAY	XXG	4	80	Panal Bebe	GREAT DAY XXG 4/80	88
-HEB	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-HEB	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-HEB	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-HEB	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-HEB	BB Tips	NA		100	Toalla Húmeda	BB Tips NA/100	94
-HEB	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-HEB	Soft Dreams	NA		80	Toalla Húmeda	Soft Dreams NA/80	97
-HEB	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-HEB	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-HEB	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-HEB	Dodys relajante	NA		100	Toalla Húmeda	Dodys relajante NA/100	143
-HEB	Baby Bebé			80	Toalla Húmeda	Baby Bebé/80	144
-HEB	BABY SKY	NA		80	Toalla Húmeda	BABY SKY NA/80	172
-HEB	Kanggis	NA		120	Toalla Húmeda	Kanggis NA/120	102
-HEB	BabySec	NA		50	Toalla Húmeda	BabySec NA/50	103
-HEB	GREAT DAY	NA		240	Toalla Húmeda	GREAT DAY NA/240	104
-HEB	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-HEB	Kotex Anatómica con Alas	NA		10	Toalla Femenina	Kotex Anatómica con Alas NA/10	106
+HEB	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+HEB	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+HEB	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+HEB	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+HEB	BB Tips	NA		100	Toalla H√∫meda	BB Tips NA/100	94
+HEB	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+HEB	Soft Dreams	NA		80	Toalla H√∫meda	Soft Dreams NA/80	97
+HEB	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+HEB	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+HEB	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+HEB	Dodys relajante	NA		100	Toalla H√∫meda	Dodys relajante NA/100	143
+HEB	Baby Beb√©			80	Toalla H√∫meda	Baby Beb√©/80	144
+HEB	BABY SKY	NA		80	Toalla H√∫meda	BABY SKY NA/80	172
+HEB	Kanggis	NA		120	Toalla H√∫meda	Kanggis NA/120	102
+HEB	BabySec	NA		50	Toalla H√∫meda	BabySec NA/50	103
+HEB	GREAT DAY	NA		240	Toalla H√∫meda	GREAT DAY NA/240	104
+HEB	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+HEB	Kotex Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex Anat√≥mica con Alas NA/10	106
 HEB	Kotex Nocturna	NA		10	Toalla Femenina	Kotex Nocturna NA/10	108
 HEB	Saba Confort Noctura	NA		8	Toalla Femenina	Saba Confort Noctura NA/8	148
 HEB	Saba Confort Regular	NA		8	Toalla Femenina	Saba Confort Regular NA/8	114
@@ -701,8 +701,8 @@ HEB	Affective Protect	G	4	10	Panal Adulto	Affective Protect G 4/10	151
 HEB	Affective Ropa Interior	M	4	10	Panal Adulto	Affective Ropa Interior M 4/10	124
 HEB	Affective Ropa Interior	G	4	10	Panal Adulto	Affective Ropa Interior G 4/10	125
 HEB	Cotidian	CC	4	10	Panal Adulto	Cotidian CC 4/10	126
-HEB	Cotidian clásico	M	4	10	Panal Adulto	Cotidian clásico M 4/10	127
-HEB	Cotidian clásico	G	4	10	Panal Adulto	Cotidian clásico G 4/10	128
+HEB	Cotidian cl√°sico	M	4	10	Panal Adulto	Cotidian cl√°sico M 4/10	127
+HEB	Cotidian cl√°sico	G	4	10	Panal Adulto	Cotidian cl√°sico G 4/10	128
 HEB	Cotidian plus	M	4	10	Panal Adulto	Cotidian plus M 4/10	152
 HEB	Cotidian plus	G	4	10	Panal Adulto	Cotidian plus G 4/10	153
 HEB	Cotidian plus	M	2	20	Panal Adulto	Cotidian plus M 2/20	173
@@ -730,11 +730,11 @@ HEB	BumCo	G	4	40	Panal Bebe	BumCo G 4/40	179
 HEB	BumCo	XG	4	40	Panal Bebe	BumCo XG 4/40	180
 HEB	BumCo	XXG	4	40	Panal Bebe	BumCo XXG 4/40	181
 HEB	BumCo	XXXG	4	40	Panal Bebe	BumCo XXXG 4/40	182
-Soriana	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-HEB	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-Mi Tienda Del Ahorro	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-Arteli	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-Chedraui	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
+Soriana	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+HEB	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+Mi Tienda Del Ahorro	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+Arteli	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+Chedraui	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
 Chedraui	BumCo	RN	4	40	Panal Bebe	BumCo RN 4/40	176
 Chedraui	BumCo	CH	4	40	Panal Bebe	BumCo CH 4/40	177
 Chedraui	BumCo	M	4	40	Panal Bebe	BumCo M 4/40	178
@@ -742,7 +742,7 @@ Chedraui	BumCo	G	4	40	Panal Bebe	BumCo G 4/40	179
 Chedraui	BumCo	XG	4	40	Panal Bebe	BumCo XG 4/40	180
 Chedraui	BumCo	XXG	4	40	Panal Bebe	BumCo XXG 4/40	181
 Chedraui	BumCo	XXXG	4	40	Panal Bebe	BumCo XXXG 4/40	182
-Merco	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
+Merco	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
 Merco	BumCo	RN	4	40	Panal Bebe	BumCo RN 4/40	176
 Merco	BumCo	CH	4	40	Panal Bebe	BumCo CH 4/40	177
 Merco	BumCo	M	4	40	Panal Bebe	BumCo M 4/40	178
@@ -773,9 +773,9 @@ Merco	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Merco	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Merco	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Merco	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Merco	Bebin Super	NA	24	40	Toalla Húmeda	Bebin Super NA 24/40	207
-Merco	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Merco	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Merco	Bebin Super	NA	24	40	Toalla H√∫meda	Bebin Super NA 24/40	207
+Merco	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Merco	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
 Merco	Dignity	M	4	10	Panal Adulto	Dignity M 4/10	210
 Merco	Dignity	G	4	10	Panal Adulto	Dignity G 4/10	211
 Merco	Dignity	CC	4	10	Panal Adulto	Dignity CC 4/10	212
@@ -789,7 +789,7 @@ HEB	Bebin Super	G	4	40	Panal Bebe	Bebin Super G 4/40	192
 HEB	Bebin Super	XG	4	40	Panal Bebe	Bebin Super XG 4/40	193
 HEB	Bebin Super	XXG	4	40	Panal Bebe	Bebin Super XXG 4/40	194
 HEB	Bebin Super	XXXG	4	40	Panal Bebe	Bebin Super XXXG 4/40	195
-HEB	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
+HEB	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
 HEB	Cordial	M	4	10	Panal Adulto	Cordial M 4/10	218
 HEB	Cordial	G	4	10	Panal Adulto	Cordial G 4/10	219
 HEB	Cordial	CC	4	10	Panal Adulto	Cordial CC 4/10	220
@@ -802,8 +802,8 @@ Mi Tienda Del Ahorro	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Mi Tienda Del Ahorro	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Mi Tienda Del Ahorro	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Mi Tienda Del Ahorro	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Mi Tienda Del Ahorro	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Mi Tienda Del Ahorro	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Mi Tienda Del Ahorro	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Mi Tienda Del Ahorro	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
 Mi Tienda Del Ahorro	Dignity	M	4	10	Panal Adulto	Dignity M 4/10	210
 Mi Tienda Del Ahorro	Cordial	M	4	10	Panal Adulto	Cordial M 4/10	218
 Mi Tienda Del Ahorro	Cordial	G	4	10	Panal Adulto	Cordial G 4/10	219
@@ -818,7 +818,7 @@ Del Sol	Bebin Super	M	4	40	Panal Bebe	Bebin Super M 4/40	191
 Del Sol	Bebin Super	G	4	40	Panal Bebe	Bebin Super G 4/40	192
 Del Sol	Bebin Super	XG	4	40	Panal Bebe	Bebin Super XG 4/40	193
 Del Sol	Bebin Super	XXXG	4	40	Panal Bebe	Bebin Super XXXG 4/40	195
-Del Sol	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
+Del Sol	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
 Del Sol	Tapete Woofs	NA	6	10	Mascotas	Tapete Woofs NA 6/10	217
 Arteli	Bebin Super	M	4	40	Panal Bebe	Bebin Super M 4/40	191
 Arteli	Bebin Super	G	4	40	Panal Bebe	Bebin Super G 4/40	192
@@ -829,9 +829,9 @@ Arteli	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Arteli	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Arteli	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Arteli	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Arteli	Bebin Super	NA	24	40	Toalla Húmeda	Bebin Super NA 24/40	207
-Arteli	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Arteli	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Arteli	Bebin Super	NA	24	40	Toalla H√∫meda	Bebin Super NA 24/40	207
+Arteli	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Arteli	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
 Arteli	Feelings regular	NA		8	Toalla Femenina	Feelings regular NA/8	215
 Arteli	Feelings nocturna	NA		8	Toalla Femenina	Feelings nocturna NA/8	216
 Arteli	Clean & Pure	NA		40	Toalla Antibacterial	Clean & Pure NA/40	221
@@ -845,16 +845,16 @@ Alsuper	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Alsuper	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Alsuper	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Alsuper	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Alsuper	Bebin Super	NA	24	40	Toalla Húmeda	Bebin Super NA 24/40	207
-Alsuper	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Alsuper	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
-Mi Tienda Del Ahorro	BumCo	RN		40	PaÒal Bebe	BumCo RN 4/40	176
-Mi Tienda Del Ahorro	BumCo	CH		40	PaÒal Bebe	BumCo CH 4/40	177
-Mi Tienda Del Ahorro	BumCo	M		40	PaÒal Bebe	BumCo M 4/40	178
-Mi Tienda Del Ahorro	BumCo	G		40	PaÒal Bebe	BumCo G 4/40	179
-Mi Tienda Del Ahorro	BumCo	XG		40	PaÒal Bebe	BumCo XG 4/40	180
-Mi Tienda Del Ahorro	BumCo	XXG		40	PaÒal Bebe	BumCo XXG 4/40	181
-Mi Tienda Del Ahorro	BumCo	XXXG		40	PaÒal Bebe	BumCo XXXG 4/40	182
+Alsuper	Bebin Super	NA	24	40	Toalla H√∫meda	Bebin Super NA 24/40	207
+Alsuper	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Alsuper	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
+Mi Tienda Del Ahorro	BumCo	RN		40	Pa√±al Bebe	BumCo RN 4/40	176
+Mi Tienda Del Ahorro	BumCo	CH		40	Pa√±al Bebe	BumCo CH 4/40	177
+Mi Tienda Del Ahorro	BumCo	M		40	Pa√±al Bebe	BumCo M 4/40	178
+Mi Tienda Del Ahorro	BumCo	G		40	Pa√±al Bebe	BumCo G 4/40	179
+Mi Tienda Del Ahorro	BumCo	XG		40	Pa√±al Bebe	BumCo XG 4/40	180
+Mi Tienda Del Ahorro	BumCo	XXG		40	Pa√±al Bebe	BumCo XXG 4/40	181
+Mi Tienda Del Ahorro	BumCo	XXXG		40	Pa√±al Bebe	BumCo XXXG 4/40	182
 Soriana	Bebin Super	XXG	4	40	Panal Bebe	Bebin Super XXG 4/40	194
 Soriana	Bebin Super	XXXG	4	40	Panal Bebe	Bebin Super XXXG 4/40	195
 Soriana	Bebin Super	G	4	50	Panal Bebe	Bebin Super G 4/50's	230
@@ -865,221 +865,221 @@ Soriana	Huggies Supreme	XG	4	36	Panal Bebe	Huggies Supreme 5 36 Pz	223
 Soriana	Huggies Supreme	XXG	4	36	Panal Bebe	Huggies Supreme 6 36 Pz	224
 Soriana	Huggies Supreme	CH	4	40	Panal Bebe	Huggies Supreme 2 40 Pz	227
 Soriana	Huggies Supreme	RN	4	40	Panal Bebe	Huggies Supreme 1 40 Pz	228
-Soriana	Huggies Supreme	TH	80	0	Toalla Húmeda	T. Humeda Huggies Supreme 80's	229
-Soriana	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Soriana	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Soriana	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Soriana	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Soriana	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Soriana	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Soriana	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Soriana	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Soriana	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Soriana	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-Soriana	BIO BABY	MED	4	40	PaÒal Bebe	BIO BABY MED 4/40	48
-Soriana	BIO BABY	G	4	40	PaÒal Bebe	BIO BABY G 4/40	49
-Soriana	BIO BABY	XG	4	40	PaÒal Bebe	BIO BABY XG 4/40	50
-Soriana	BIO BABY	XXG	4	40	PaÒal Bebe	BIO BABY XXG 4/40	51
-Soriana	BIO BABY	XXXG	4	40	PaÒal Bebe	BIO BABY XXXG 4/40	52
-Soriana	BIO BABY	G	2	60	PaÒal Bebe	BIO BABY G 2/60	53
-Soriana	BIO BABY	XG	2	60	PaÒal Bebe	BIO BABY XG 2/60	54
-Soriana	BIO BABY	XXG	2	60	PaÒal Bebe	BIO BABY XXG 2/60	55
-Soriana	BIO BABY	NA	0	80	Toalla H˙meda	BIO BABY NA/80	92
-Soriana	BIO BABY	CH	4	40	PaÒal Bebe	BIO BABY CH 4/40	155
-Soriana	BB Tips	RN	4	40	PaÒal Bebe	BB Tips RN 4/40	56
-Soriana	BB Tips	CH	4	40	PaÒal Bebe	BB Tips CH 4/40	57
-Soriana	BB Tips	M	4	40	PaÒal Bebe	BB Tips M 4/40	58
-Soriana	BB Tips	G	4	40	PaÒal Bebe	BB Tips G 4/40	59
-Soriana	BB Tips	XG	4	40	PaÒal Bebe	BB Tips XG 4/40	60
-Soriana	BB Tips	XXG	4	40	PaÒal Bebe	BB Tips XXG 4/40	61
-Soriana	BB Tips	XXXG	4	40	PaÒal Bebe	BB Tips XXXG 4/40	62
-Soriana	BB Tips	G	2	64	PaÒal Bebe	BB Tips G 2/64	63
-Soriana	BB Tips	XG	2	60	PaÒal Bebe	BB Tips XG 2/60	64
-Soriana	BB Tips	XXG	2	60	PaÒal Bebe	BB Tips XXG 2/60	65
-Soriana	BB Tips	NA	0	100	Toalla H˙meda	BB Tips NA/100	94
-Soriana	Kiddies	G	4	40	PaÒal Bebe	Kiddies G 4/40	41
-Soriana	Kiddies	XG	4	40	PaÒal Bebe	Kiddies XG 4/40	42
-Soriana	Kiddies	XXG	4	40	PaÒal Bebe	Kiddies XXG 4/40	43
-Soriana	Kiddies	XXXG	4	40	PaÒal Bebe	Kiddies XXXG 4/40	44
-Soriana	Kiddies	G	2	80	PaÒal Bebe	Kiddies G 2/80	45
-Soriana	Kiddies	XG	2	80	PaÒal Bebe	Kiddies XG 2/80	46
-Soriana	Kiddies	XXG	2	80	PaÒal Bebe	Kiddies XXG 2/80	47
-Soriana	Kiddies	CH	4	40	PaÒal Bebe	Kiddies CH 4/40	139
-Soriana	Kiddies	M	4	40	PaÒal Bebe	Kiddies M 4/40	140
-Soriana	Suavelastic	RN	4	40	PaÒal Bebe	Suavelastic RN 4/40	10
-Soriana	Suavelastic	CH	4	40	PaÒal Bebe	Suavelastic CH 4/40	11
-Soriana	Suavelastic	M	4	40	PaÒal Bebe	Suavelastic M 4/40	12
-Soriana	Suavelastic	G	4	40	PaÒal Bebe	Suavelastic G 4/40	13
-Soriana	Suavelastic	XG	4	40	PaÒal Bebe	Suavelastic XG 4/40	14
-Soriana	Suavelastic	XXG	4	40	PaÒal Bebe	Suavelastic XXG 4/40	15
-Soriana	Suavelastic	XXXG	4	40	PaÒal Bebe	Suavelastic XXXG 4/40	16
-Soriana	Suavelastic	M	2	60	PaÒal Bebe	Suavelastic M 2/60	17
-Soriana	Suavelastic	G	2	60	PaÒal Bebe	Suavelastic G 2/60	18
-Soriana	Suavelastic	XG	2	60	PaÒal Bebe	Suavelastic XG 2/60	19
-Soriana	Suavelastic	XXG	2	60	PaÒal Bebe	Suavelastic XXG 2/60	20
-Soriana	Suavelastic	NA	0	100	Toalla H˙meda	Suavelastic NA/100	90
-Soriana	Suavelastic	RN	8	20	PaÒal Bebe	Suavelastic RN 8/20	135
-Soriana	Suavelastic	CH	6	16	PaÒal Bebe	Suavelastic CH 6/16	136
-Soriana	Movilastic	G	4	40	PaÒal Bebe	Movilastic G 4/40	21
-Soriana	Movilastic	XG	4	40	PaÒal Bebe	Movilastic XG 4/40	22
-Soriana	Movilastic	XXG	4	40	PaÒal Bebe	Movilastic XXG 4/40	23
-Soriana	Comodisec	CH	4	40	PaÒal Bebe	Comodisec CH 4/40	24
-Soriana	Comodisec	M	4	40	PaÒal Bebe	Comodisec M 4/40	25
-Soriana	Comodisec	G	4	40	PaÒal Bebe	Comodisec G 4/40	26
-Soriana	Comodisec	XG	4	40	PaÒal Bebe	Comodisec XG 4/40	27
-Soriana	Comodisec	M	2	80	PaÒal Bebe	Comodisec M 2/80	28
-Soriana	Comodisec	G	2	80	PaÒal Bebe	Comodisec G 2/80	29
-Soriana	Comodisec	XG	2	80	PaÒal Bebe	Comodisec XG 2/80	30
-Soriana	Comodisec	XXG	2	80	PaÒal Bebe	Comodisec XXG 2/80	31
-Soriana	Absorsec	CH	4	40	PaÒal Bebe	Absorsec CH 4/40	1
-Soriana	Absorsec	M	4	40	PaÒal Bebe	Absorsec M 4/40	2
-Soriana	Absorsec	G	4	40	PaÒal Bebe	Absorsec G 4/40	3
-Soriana	Absorsec	XG	4	40	PaÒal Bebe	Absorsec XG 4/40	4
-Soriana	Absorsec	XXG	4	40	PaÒal Bebe	Absorsec XXG 4/40	5
-Soriana	Absorsec	M	2	80	PaÒal Bebe	Absorsec M 2/80	6
-Soriana	Absorsec	G	2	80	PaÒal Bebe	Absorsec G 2/80	7
-Soriana	Absorsec	XG	2	80	PaÒal Bebe	Absorsec XG 2/80	8
-Soriana	Absorsec	XXG	2	80	PaÒal Bebe	Absorsec XXG 2/80	9
-Soriana	Absorsec	NA	0	120	Toalla H˙meda	Absorsec NA/120	89
-Soriana	Absorsec	NA	0	90	Toalla H˙meda	Absorsec NA/90	142
-Soriana	Absorsec	G	6	14	PaÒal Bebe	Absorsec G 6/14	159
-Alsuper	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Alsuper	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Alsuper	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Alsuper	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Alsuper	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Alsuper	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Alsuper	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Alsuper	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-Alsuper	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-Alsuper	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-Alsuper	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-Alsuper	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-Alsuper	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-Alsuper	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-Alsuper	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-Alsuper	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-Alsuper	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Alsuper	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Alsuper	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-Arteli	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Arteli	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Arteli	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Arteli	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Arteli	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Arteli	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Arteli	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Arteli	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-Arteli	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-Arteli	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-Arteli	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-Arteli	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-Arteli	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-Arteli	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-Arteli	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-Arteli	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-Arteli	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Arteli	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Arteli	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-Arteli	BumCo	RN	4	40	PaÒal Bebe	BumCo RN 4/40	172
-Arteli	BumCo	CH	4	40	PaÒal Bebe	BumCo CH 4/40	173
-Arteli	BumCo	M	4	40	PaÒal Bebe	BumCo M 4/40	174
-Arteli	BumCo	G	4	40	PaÒal Bebe	BumCo G 4/40	175
-Arteli	BumCo	XG	4	40	PaÒal Bebe	BumCo XG 4/40	176
-Arteli	BumCo	XXG	4	40	PaÒal Bebe	BumCo XXG 4/40	177
-Arteli	BumCo	XXXG	4	40	PaÒal Bebe	BumCo XXXG 4/40	178
-Chedraui	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Chedraui	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Chedraui	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Chedraui	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Chedraui	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Chedraui	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Chedraui	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Chedraui	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-Chedraui	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-Chedraui	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-Chedraui	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-Chedraui	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-Chedraui	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-Chedraui	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-Chedraui	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-Chedraui	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-Chedraui	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Chedraui	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Chedraui	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-HEB	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-HEB	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-HEB	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-HEB	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-HEB	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-HEB	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-HEB	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-HEB	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-HEB	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-HEB	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-HEB	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-HEB	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-HEB	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-HEB	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-HEB	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-HEB	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-HEB	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-HEB	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-HEB	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-Merco	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Merco	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Merco	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Merco	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Merco	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Merco	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Merco	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Merco	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-Merco	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-Merco	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-Merco	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-Merco	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-Merco	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-Merco	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-Merco	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-Merco	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-Merco	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Merco	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Merco	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-Mi Tienda Del Ahorro	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Mi Tienda Del Ahorro	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Mi Tienda Del Ahorro	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Mi Tienda Del Ahorro	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Mi Tienda Del Ahorro	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Mi Tienda Del Ahorro	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Mi Tienda Del Ahorro	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Mi Tienda Del Ahorro	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-Mi Tienda Del Ahorro	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-Mi Tienda Del Ahorro	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-Mi Tienda Del Ahorro	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-Mi Tienda Del Ahorro	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-Mi Tienda Del Ahorro	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-Mi Tienda Del Ahorro	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-Mi Tienda Del Ahorro	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-Mi Tienda Del Ahorro	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-Mi Tienda Del Ahorro	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Mi Tienda Del Ahorro	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Mi Tienda Del Ahorro	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
-Smart	Huggies Ultra Confort	M	4	40	PaÒal Bebe	Huggies Ultra Comfrot 3 40 Pz	214
-Smart	Huggies Ultra Confort	G	4	40	PaÒal Bebe	Huggies Ultra Comfrot 4 40 Pz	215
-Smart	Huggies Ultra Confort	XG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 5 40 Pz	216
-Smart	Huggies Ultra Confort	XXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 6 40 Pz	217
-Smart	Huggies All Around	XG	4	40	PaÒal Bebe	Huggies All Around 5 40 Pz	218
-Smart	Huggies All Around	XXG	4	40	PaÒal Bebe	Huggies All Around 6 40 Pz	219
-Smart	Huggies All Around	XXXG	4	40	PaÒal Bebe	Huggies All Around 7 40 Pz	220
-Smart	Huggies Supreme	M	4	36	PaÒal Bebe	Huggies Supreme 3 36 Pz	221
-Smart	Huggies Supreme	G	4	36	PaÒal Bebe	Huggies Supreme 4 36 Pz	222
-Smart	Huggies Supreme	XG	4	36	PaÒal Bebe	Huggies Supreme 5 36 Pz	223
-Smart	Huggies Supreme	XXG	4	36	PaÒal Bebe	Huggies Supreme 6 36 Pz	224
-Smart	Huggies Eco Protec	XG	4	32	PaÒal Bebe	Huggies Eco Protec 5 32 Pz	225
-Smart	Huggies Eco Protec	XXG	4	32	PaÒal Bebe	Huggies Eco Protec 6 32 Pz	226
-Smart	Huggies Supreme	CH	4	40	PaÒal Bebe	Huggies Supreme 2 40 Pz	227
-Smart	Huggies Supreme	RN	4	40	PaÒal Bebe	Huggies Supreme 1 40 Pz	228
-Smart	Huggies Supreme	TH	80	0	Toalla H˙meda	T. Humeda Huggies Supreme 80's	229
-Smart	Huggies Ultra Confort	RN	4	44	PaÒal Bebe	Huggies Ultra Comfrot 1 44 Pz	232
-Smart	Huggies Ultra Confort	CH	4	44	PaÒal Bebe	Huggies Ultra Comfrot 2 44 Pz	233
-Smart	Huggies Ultra Confort	XXXG	4	40	PaÒal Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Soriana	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Soriana	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Soriana	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Soriana	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Soriana	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Soriana	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Soriana	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Soriana	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Soriana	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Soriana	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Soriana	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Soriana	BIO BABY	MED	4	40	Pa√±al Bebe	BIO BABY MED 4/40	48
+Soriana	BIO BABY	G	4	40	Pa√±al Bebe	BIO BABY G 4/40	49
+Soriana	BIO BABY	XG	4	40	Pa√±al Bebe	BIO BABY XG 4/40	50
+Soriana	BIO BABY	XXG	4	40	Pa√±al Bebe	BIO BABY XXG 4/40	51
+Soriana	BIO BABY	XXXG	4	40	Pa√±al Bebe	BIO BABY XXXG 4/40	52
+Soriana	BIO BABY	G	2	60	Pa√±al Bebe	BIO BABY G 2/60	53
+Soriana	BIO BABY	XG	2	60	Pa√±al Bebe	BIO BABY XG 2/60	54
+Soriana	BIO BABY	XXG	2	60	Pa√±al Bebe	BIO BABY XXG 2/60	55
+Soriana	BIO BABY	NA	0	80	Toalla H√∫meda	BIO BABY NA/80	92
+Soriana	BIO BABY	CH	4	40	Pa√±al Bebe	BIO BABY CH 4/40	155
+Soriana	BB Tips	RN	4	40	Pa√±al Bebe	BB Tips RN 4/40	56
+Soriana	BB Tips	CH	4	40	Pa√±al Bebe	BB Tips CH 4/40	57
+Soriana	BB Tips	M	4	40	Pa√±al Bebe	BB Tips M 4/40	58
+Soriana	BB Tips	G	4	40	Pa√±al Bebe	BB Tips G 4/40	59
+Soriana	BB Tips	XG	4	40	Pa√±al Bebe	BB Tips XG 4/40	60
+Soriana	BB Tips	XXG	4	40	Pa√±al Bebe	BB Tips XXG 4/40	61
+Soriana	BB Tips	XXXG	4	40	Pa√±al Bebe	BB Tips XXXG 4/40	62
+Soriana	BB Tips	G	2	64	Pa√±al Bebe	BB Tips G 2/64	63
+Soriana	BB Tips	XG	2	60	Pa√±al Bebe	BB Tips XG 2/60	64
+Soriana	BB Tips	XXG	2	60	Pa√±al Bebe	BB Tips XXG 2/60	65
+Soriana	BB Tips	NA	0	100	Toalla H√∫meda	BB Tips NA/100	94
+Soriana	Kiddies	G	4	40	Pa√±al Bebe	Kiddies G 4/40	41
+Soriana	Kiddies	XG	4	40	Pa√±al Bebe	Kiddies XG 4/40	42
+Soriana	Kiddies	XXG	4	40	Pa√±al Bebe	Kiddies XXG 4/40	43
+Soriana	Kiddies	XXXG	4	40	Pa√±al Bebe	Kiddies XXXG 4/40	44
+Soriana	Kiddies	G	2	80	Pa√±al Bebe	Kiddies G 2/80	45
+Soriana	Kiddies	XG	2	80	Pa√±al Bebe	Kiddies XG 2/80	46
+Soriana	Kiddies	XXG	2	80	Pa√±al Bebe	Kiddies XXG 2/80	47
+Soriana	Kiddies	CH	4	40	Pa√±al Bebe	Kiddies CH 4/40	139
+Soriana	Kiddies	M	4	40	Pa√±al Bebe	Kiddies M 4/40	140
+Soriana	Suavelastic	RN	4	40	Pa√±al Bebe	Suavelastic RN 4/40	10
+Soriana	Suavelastic	CH	4	40	Pa√±al Bebe	Suavelastic CH 4/40	11
+Soriana	Suavelastic	M	4	40	Pa√±al Bebe	Suavelastic M 4/40	12
+Soriana	Suavelastic	G	4	40	Pa√±al Bebe	Suavelastic G 4/40	13
+Soriana	Suavelastic	XG	4	40	Pa√±al Bebe	Suavelastic XG 4/40	14
+Soriana	Suavelastic	XXG	4	40	Pa√±al Bebe	Suavelastic XXG 4/40	15
+Soriana	Suavelastic	XXXG	4	40	Pa√±al Bebe	Suavelastic XXXG 4/40	16
+Soriana	Suavelastic	M	2	60	Pa√±al Bebe	Suavelastic M 2/60	17
+Soriana	Suavelastic	G	2	60	Pa√±al Bebe	Suavelastic G 2/60	18
+Soriana	Suavelastic	XG	2	60	Pa√±al Bebe	Suavelastic XG 2/60	19
+Soriana	Suavelastic	XXG	2	60	Pa√±al Bebe	Suavelastic XXG 2/60	20
+Soriana	Suavelastic	NA	0	100	Toalla H√∫meda	Suavelastic NA/100	90
+Soriana	Suavelastic	RN	8	20	Pa√±al Bebe	Suavelastic RN 8/20	135
+Soriana	Suavelastic	CH	6	16	Pa√±al Bebe	Suavelastic CH 6/16	136
+Soriana	Movilastic	G	4	40	Pa√±al Bebe	Movilastic G 4/40	21
+Soriana	Movilastic	XG	4	40	Pa√±al Bebe	Movilastic XG 4/40	22
+Soriana	Movilastic	XXG	4	40	Pa√±al Bebe	Movilastic XXG 4/40	23
+Soriana	Comodisec	CH	4	40	Pa√±al Bebe	Comodisec CH 4/40	24
+Soriana	Comodisec	M	4	40	Pa√±al Bebe	Comodisec M 4/40	25
+Soriana	Comodisec	G	4	40	Pa√±al Bebe	Comodisec G 4/40	26
+Soriana	Comodisec	XG	4	40	Pa√±al Bebe	Comodisec XG 4/40	27
+Soriana	Comodisec	M	2	80	Pa√±al Bebe	Comodisec M 2/80	28
+Soriana	Comodisec	G	2	80	Pa√±al Bebe	Comodisec G 2/80	29
+Soriana	Comodisec	XG	2	80	Pa√±al Bebe	Comodisec XG 2/80	30
+Soriana	Comodisec	XXG	2	80	Pa√±al Bebe	Comodisec XXG 2/80	31
+Soriana	Absorsec	CH	4	40	Pa√±al Bebe	Absorsec CH 4/40	1
+Soriana	Absorsec	M	4	40	Pa√±al Bebe	Absorsec M 4/40	2
+Soriana	Absorsec	G	4	40	Pa√±al Bebe	Absorsec G 4/40	3
+Soriana	Absorsec	XG	4	40	Pa√±al Bebe	Absorsec XG 4/40	4
+Soriana	Absorsec	XXG	4	40	Pa√±al Bebe	Absorsec XXG 4/40	5
+Soriana	Absorsec	M	2	80	Pa√±al Bebe	Absorsec M 2/80	6
+Soriana	Absorsec	G	2	80	Pa√±al Bebe	Absorsec G 2/80	7
+Soriana	Absorsec	XG	2	80	Pa√±al Bebe	Absorsec XG 2/80	8
+Soriana	Absorsec	XXG	2	80	Pa√±al Bebe	Absorsec XXG 2/80	9
+Soriana	Absorsec	NA	0	120	Toalla H√∫meda	Absorsec NA/120	89
+Soriana	Absorsec	NA	0	90	Toalla H√∫meda	Absorsec NA/90	142
+Soriana	Absorsec	G	6	14	Pa√±al Bebe	Absorsec G 6/14	159
+Alsuper	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Alsuper	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Alsuper	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Alsuper	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Alsuper	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Alsuper	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Alsuper	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Alsuper	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+Alsuper	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+Alsuper	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+Alsuper	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+Alsuper	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+Alsuper	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+Alsuper	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+Alsuper	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+Alsuper	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Alsuper	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Alsuper	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Alsuper	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Arteli	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Arteli	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Arteli	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Arteli	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Arteli	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Arteli	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Arteli	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Arteli	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+Arteli	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+Arteli	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+Arteli	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+Arteli	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+Arteli	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+Arteli	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+Arteli	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+Arteli	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Arteli	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Arteli	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Arteli	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Arteli	BumCo	RN	4	40	Pa√±al Bebe	BumCo RN 4/40	172
+Arteli	BumCo	CH	4	40	Pa√±al Bebe	BumCo CH 4/40	173
+Arteli	BumCo	M	4	40	Pa√±al Bebe	BumCo M 4/40	174
+Arteli	BumCo	G	4	40	Pa√±al Bebe	BumCo G 4/40	175
+Arteli	BumCo	XG	4	40	Pa√±al Bebe	BumCo XG 4/40	176
+Arteli	BumCo	XXG	4	40	Pa√±al Bebe	BumCo XXG 4/40	177
+Arteli	BumCo	XXXG	4	40	Pa√±al Bebe	BumCo XXXG 4/40	178
+Chedraui	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Chedraui	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Chedraui	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Chedraui	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Chedraui	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Chedraui	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Chedraui	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Chedraui	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+Chedraui	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+Chedraui	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+Chedraui	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+Chedraui	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+Chedraui	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+Chedraui	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+Chedraui	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+Chedraui	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Chedraui	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Chedraui	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Chedraui	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+HEB	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+HEB	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+HEB	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+HEB	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+HEB	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+HEB	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+HEB	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+HEB	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+HEB	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+HEB	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+HEB	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+HEB	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+HEB	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+HEB	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+HEB	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+HEB	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+HEB	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+HEB	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+HEB	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Merco	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Merco	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Merco	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Merco	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Merco	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Merco	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Merco	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Merco	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+Merco	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+Merco	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+Merco	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+Merco	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+Merco	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+Merco	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+Merco	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+Merco	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Merco	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Merco	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Merco	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Mi Tienda Del Ahorro	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Mi Tienda Del Ahorro	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Mi Tienda Del Ahorro	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Mi Tienda Del Ahorro	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Mi Tienda Del Ahorro	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Mi Tienda Del Ahorro	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Mi Tienda Del Ahorro	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Mi Tienda Del Ahorro	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+Mi Tienda Del Ahorro	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+Mi Tienda Del Ahorro	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+Mi Tienda Del Ahorro	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+Mi Tienda Del Ahorro	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+Mi Tienda Del Ahorro	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+Mi Tienda Del Ahorro	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+Mi Tienda Del Ahorro	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+Mi Tienda Del Ahorro	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Mi Tienda Del Ahorro	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Mi Tienda Del Ahorro	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Mi Tienda Del Ahorro	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234
+Smart	Huggies Ultra Confort	M	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 3 40 Pz	214
+Smart	Huggies Ultra Confort	G	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 4 40 Pz	215
+Smart	Huggies Ultra Confort	XG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 5 40 Pz	216
+Smart	Huggies Ultra Confort	XXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 6 40 Pz	217
+Smart	Huggies All Around	XG	4	40	Pa√±al Bebe	Huggies All Around 5 40 Pz	218
+Smart	Huggies All Around	XXG	4	40	Pa√±al Bebe	Huggies All Around 6 40 Pz	219
+Smart	Huggies All Around	XXXG	4	40	Pa√±al Bebe	Huggies All Around 7 40 Pz	220
+Smart	Huggies Supreme	M	4	36	Pa√±al Bebe	Huggies Supreme 3 36 Pz	221
+Smart	Huggies Supreme	G	4	36	Pa√±al Bebe	Huggies Supreme 4 36 Pz	222
+Smart	Huggies Supreme	XG	4	36	Pa√±al Bebe	Huggies Supreme 5 36 Pz	223
+Smart	Huggies Supreme	XXG	4	36	Pa√±al Bebe	Huggies Supreme 6 36 Pz	224
+Smart	Huggies Eco Protec	XG	4	32	Pa√±al Bebe	Huggies Eco Protec 5 32 Pz	225
+Smart	Huggies Eco Protec	XXG	4	32	Pa√±al Bebe	Huggies Eco Protec 6 32 Pz	226
+Smart	Huggies Supreme	CH	4	40	Pa√±al Bebe	Huggies Supreme 2 40 Pz	227
+Smart	Huggies Supreme	RN	4	40	Pa√±al Bebe	Huggies Supreme 1 40 Pz	228
+Smart	Huggies Supreme	TH	80	0	Toalla H√∫meda	T. Humeda Huggies Supreme 80's	229
+Smart	Huggies Ultra Confort	RN	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 1 44 Pz	232
+Smart	Huggies Ultra Confort	CH	4	44	Pa√±al Bebe	Huggies Ultra Comfrot 2 44 Pz	233
+Smart	Huggies Ultra Confort	XXXG	4	40	Pa√±al Bebe	Huggies Ultra Comfrot 7 40 Pz	234

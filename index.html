@@ -284,6 +284,12 @@
     const DATA_URL = 'store_check_v2.txt';
     let PRODUCTOS_POR_CADENA = {};
     const PROMOCIONES = ['Oferta', '2x1', '3x2', '5x3'];
+    const LEGACY_CHAR_MAP = {
+      0x87: 'á',
+      0x8E: 'é',
+      0x97: 'ó',
+      0x9C: 'ú'
+    };
 
     function normalizarDatos(){
       Object.keys(PRODUCTOS_POR_CADENA).forEach(cadena=>{
@@ -315,6 +321,81 @@
       const n = Number(num);
       if(!isFinite(n)) return '';
       return n.toFixed(2);
+    }
+
+    function decodificarTextoMixto(buffer){
+      const utf8 = new TextDecoder('utf-8').decode(buffer);
+      if(!utf8.includes('\uFFFD')) return utf8;
+
+      const bytes = new Uint8Array(buffer);
+      let out = '';
+
+      for(let i=0;i<bytes.length;i++){
+        const b0 = bytes[i];
+
+        if(b0 < 0x80){
+          out += String.fromCharCode(b0);
+          continue;
+        }
+
+        const b1 = bytes[i+1];
+        const b2 = bytes[i+2];
+        const b3 = bytes[i+3];
+
+        const es2 =
+          b0 >= 0xC2 && b0 <= 0xDF &&
+          b1 >= 0x80 && b1 <= 0xBF;
+
+        const es3 =
+          (
+            (b0 === 0xE0 && b1 >= 0xA0 && b1 <= 0xBF) ||
+            (b0 >= 0xE1 && b0 <= 0xEC && b1 >= 0x80 && b1 <= 0xBF) ||
+            (b0 === 0xED && b1 >= 0x80 && b1 <= 0x9F) ||
+            (b0 >= 0xEE && b0 <= 0xEF && b1 >= 0x80 && b1 <= 0xBF)
+          ) &&
+          b2 >= 0x80 && b2 <= 0xBF;
+
+        const es4 =
+          (
+            (b0 === 0xF0 && b1 >= 0x90 && b1 <= 0xBF) ||
+            (b0 >= 0xF1 && b0 <= 0xF3 && b1 >= 0x80 && b1 <= 0xBF) ||
+            (b0 === 0xF4 && b1 >= 0x80 && b1 <= 0x8F)
+          ) &&
+          b2 >= 0x80 && b2 <= 0xBF &&
+          b3 >= 0x80 && b3 <= 0xBF;
+
+        if(es2){
+          out += new TextDecoder('utf-8').decode(bytes.slice(i, i+2));
+          i += 1;
+          continue;
+        }
+
+        if(es3){
+          out += new TextDecoder('utf-8').decode(bytes.slice(i, i+3));
+          i += 2;
+          continue;
+        }
+
+        if(es4){
+          out += new TextDecoder('utf-8').decode(bytes.slice(i, i+4));
+          i += 3;
+          continue;
+        }
+
+        if(LEGACY_CHAR_MAP[b0]){
+          out += LEGACY_CHAR_MAP[b0];
+          continue;
+        }
+
+        if(b0 >= 0xA0){
+          out += String.fromCharCode(b0);
+          continue;
+        }
+
+        out += '\uFFFD';
+      }
+
+      return out;
     }
 
     const tablaBody = document.querySelector('#tablaProductos tbody');
@@ -431,10 +512,11 @@
     async function cargarProductosDesdeTxt(){
       try{
         const res = await fetch(DATA_URL, {cache:'no-store'});
-        if(!res.ok) throw new Error('No se pudo leer database.txt');
-        const text = await res.text();
+        if(!res.ok) throw new Error(`No se pudo leer ${DATA_URL}`);
+        const buffer = await res.arrayBuffer();
+        const text = decodificarTextoMixto(buffer);
         const lines = text.split(/\r?\n/).filter(l=>l.trim().length>0);
-        if(lines.length===0) throw new Error('database.txt vacío');
+        if(lines.length===0) throw new Error(`${DATA_URL} vacío`);
 
         const headers = lines[0].split('\t').map(h=>h.trim());
         const idx = (name)=>headers.indexOf(name);
@@ -467,7 +549,7 @@
         normalizarDatos();
         poblarCadenas();
       }catch(err){
-        mostrarMsg('error','No se pudo cargar database.txt. Abre la página desde un servidor local.');
+        mostrarMsg('error',`No se pudo cargar ${DATA_URL}. Abre la página desde un servidor local.`);
       }
     }
 

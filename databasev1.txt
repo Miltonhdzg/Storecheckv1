@@ -87,25 +87,25 @@ Mi Tienda Del Ahorro	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
 Mi Tienda Del Ahorro	GREAT DAY	XXG	4	40	Panal Bebe	GREAT DAY XXG 4/40	86
 Mi Tienda Del Ahorro	GREAT DAY	XG	4	80	Panal Bebe	GREAT DAY XG 4/80	87
 Mi Tienda Del Ahorro	GREAT DAY	XXG	4	80	Panal Bebe	GREAT DAY XXG 4/80	88
-Mi Tienda Del Ahorro	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Mi Tienda Del Ahorro	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Mi Tienda Del Ahorro	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Mi Tienda Del Ahorro	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-Mi Tienda Del Ahorro	Chicolastic 	NA		120	Toalla Húmeda	Chicolastic  NA/120	93
-Mi Tienda Del Ahorro	BB Tips 	NA		100	Toalla Húmeda	BB Tips  NA/100	94
-Mi Tienda Del Ahorro	Babysec	NA		20	Toalla Húmeda	Babysec NA/20	95
-Mi Tienda Del Ahorro	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-Mi Tienda Del Ahorro	Soft Dreams	NA		80	Toalla Húmeda	Soft Dreams NA/80	97
-Mi Tienda Del Ahorro	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-Mi Tienda Del Ahorro	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Mi Tienda Del Ahorro	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Mi Tienda Del Ahorro	My Bebe	NA		80	Toalla Húmeda	My Bebe NA/80	101
-Mi Tienda Del Ahorro	Kanggis	NA		120	Toalla Húmeda	Kanggis NA/120	102
-Mi Tienda Del Ahorro	BabySec	NA		50	Toalla Húmeda	BabySec NA/50	103
-Mi Tienda Del Ahorro	GREAT DAY	NA		240	Toalla Húmeda	GREAT DAY NA/240	104
-Mi Tienda Del Ahorro	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-Mi Tienda Del Ahorro	Kotex  Anatómica con Alas	NA		10	Toalla Femenina	Kotex  Anatómica con Alas NA/10	106
-Mi Tienda Del Ahorro	Kotex  Anatómica sin Alas	NA		10	Toalla Femenina	Kotex  Anatómica sin Alas NA/10	107
+Mi Tienda Del Ahorro	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Mi Tienda Del Ahorro	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Mi Tienda Del Ahorro	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Mi Tienda Del Ahorro	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+Mi Tienda Del Ahorro	Chicolastic 	NA		120	Toalla H√∫meda	Chicolastic  NA/120	93
+Mi Tienda Del Ahorro	BB Tips 	NA		100	Toalla H√∫meda	BB Tips  NA/100	94
+Mi Tienda Del Ahorro	Babysec	NA		20	Toalla H√∫meda	Babysec NA/20	95
+Mi Tienda Del Ahorro	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+Mi Tienda Del Ahorro	Soft Dreams	NA		80	Toalla H√∫meda	Soft Dreams NA/80	97
+Mi Tienda Del Ahorro	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+Mi Tienda Del Ahorro	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Mi Tienda Del Ahorro	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Mi Tienda Del Ahorro	My Bebe	NA		80	Toalla H√∫meda	My Bebe NA/80	101
+Mi Tienda Del Ahorro	Kanggis	NA		120	Toalla H√∫meda	Kanggis NA/120	102
+Mi Tienda Del Ahorro	BabySec	NA		50	Toalla H√∫meda	BabySec NA/50	103
+Mi Tienda Del Ahorro	GREAT DAY	NA		240	Toalla H√∫meda	GREAT DAY NA/240	104
+Mi Tienda Del Ahorro	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+Mi Tienda Del Ahorro	Kotex  Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica con Alas NA/10	106
+Mi Tienda Del Ahorro	Kotex  Anat√≥mica sin Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica sin Alas NA/10	107
 Mi Tienda Del Ahorro	Kotex Nocturna 	NA		10	Toalla Femenina	Kotex Nocturna  NA/10	108
 Mi Tienda Del Ahorro	Fiore sin limites con alas	NA		14	Toalla Femenina	Fiore sin limites con alas NA/14	109
 Mi Tienda Del Ahorro	Fiore Sin limites sin alas	NA		8	Toalla Femenina	Fiore Sin limites sin alas NA/8	110
@@ -125,8 +125,8 @@ Mi Tienda Del Ahorro	Affective Protect 	M	4	10	Panal Adulto	Affective Protect  M
 Mi Tienda Del Ahorro	Affective Ropa Interior 	M	4	10	Panal Adulto	Affective Ropa Interior  M 4/10	124
 Mi Tienda Del Ahorro	Affective Ropa Interior 	G	4	10	Panal Adulto	Affective Ropa Interior  G 4/10	125
 Mi Tienda Del Ahorro	Cotidian 	CC	4	10	Panal Adulto	Cotidian  CC 4/10	126
-Mi Tienda Del Ahorro	Cotidian clásico 	M	4	10	Panal Adulto	Cotidian clásico  M 4/10	127
-Mi Tienda Del Ahorro	Cotidian clásico 	G	4	10	Panal Adulto	Cotidian clásico  G 4/10	128
+Mi Tienda Del Ahorro	Cotidian cl√°sico 	M	4	10	Panal Adulto	Cotidian cl√°sico  M 4/10	127
+Mi Tienda Del Ahorro	Cotidian cl√°sico 	G	4	10	Panal Adulto	Cotidian cl√°sico  G 4/10	128
 Mi Tienda Del Ahorro	Tena Confort  	G	4	10	Panal Adulto	Tena Confort   G 4/10	129
 Mi Tienda Del Ahorro	Tena 	PREDOBLADO		10	Panal Adulto	Tena  PREDOBLADO/10	130
 Mi Tienda Del Ahorro	Tena maxi protect	CH-M		10	Panal Adulto	Tena maxi protect CH-M/10	131
@@ -194,17 +194,17 @@ Smart	Soft Dreams  	G	4	36	Panal Bebe	Soft Dreams   G 4/36	76
 Smart	Soft Dreams  	XG	4	34	Panal Bebe	Soft Dreams   XG 4/34	77
 Smart	GREAT DAY	G	4	40	Panal Bebe	GREAT DAY G 4/40	84
 Smart	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
-Smart	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Smart	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Smart	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Smart	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Smart	BB Tips 	NA		100	Toalla Húmeda	BB Tips  NA/100	94
-Smart	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Smart	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Smart	Dodys relajante	NA		100	Toalla Húmeda	Dodys relajante NA/100	143
-Smart	Baby Bebé			80	Toalla Húmeda	Baby Bebé/80	144
-Smart	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-Smart	Kotex  Anatómica con Alas	NA		10	Toalla Femenina	Kotex  Anatómica con Alas NA/10	106
+Smart	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Smart	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Smart	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Smart	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Smart	BB Tips 	NA		100	Toalla H√∫meda	BB Tips  NA/100	94
+Smart	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Smart	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Smart	Dodys relajante	NA		100	Toalla H√∫meda	Dodys relajante NA/100	143
+Smart	Baby Beb√©			80	Toalla H√∫meda	Baby Beb√©/80	144
+Smart	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+Smart	Kotex  Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica con Alas NA/10	106
 Smart	Fiore sin limites con alas	NA		8	Toalla Femenina	Fiore sin limites con alas NA/8	145
 Smart	Fiore Sin limites sin alas	NA		14	Toalla Femenina	Fiore Sin limites sin alas NA/14	146
 Smart	Fiore Nocturna con alas	NA		16	Toalla Femenina	Fiore Nocturna con alas NA/16	111
@@ -241,13 +241,13 @@ Arteli	Movilastic	XG	4	40	Panal Bebe	Movilastic XG 4/40	22
 Arteli	Movilastic	XXG	4	40	Panal Bebe	Movilastic XXG 4/40	23
 Arteli	Comodisec 	G	2	80	Panal Bebe	Comodisec  G 2/80	29
 Arteli	Comodisec 	XXG	2	80	Panal Bebe	Comodisec  XXG 2/80	31
-Arteli	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Arteli	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Arteli	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Arteli	Chicolastic 	NA		120	Toalla Húmeda	Chicolastic  NA/120	93
-Arteli	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Arteli	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Arteli	My Bebe	NA		80	Toalla Húmeda	My Bebe NA/80	101
+Arteli	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Arteli	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Arteli	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Arteli	Chicolastic 	NA		120	Toalla H√∫meda	Chicolastic  NA/120	93
+Arteli	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Arteli	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Arteli	My Bebe	NA		80	Toalla H√∫meda	My Bebe NA/80	101
 Arteli	Kotex Nocturna 	NA		10	Toalla Femenina	Kotex Nocturna  NA/10	108
 Arteli	Fiore sin limites con alas	NA		14	Toalla Femenina	Fiore sin limites con alas NA/14	109
 Arteli	Fiore Sin limites sin alas	NA		14	Toalla Femenina	Fiore Sin limites sin alas NA/14	146
@@ -262,8 +262,8 @@ Arteli	Affective Advance	G	4	10	Panal Adulto	Affective Advance G 4/10	121
 Arteli	Affective Predoblado 	PREDOBLADO	4	10	Panal Adulto	Affective Predoblado  PREDOBLADO 4/10	122
 Arteli	Affective Protect 	M	4	10	Panal Adulto	Affective Protect  M 4/10	123
 Arteli	Affective Protect 	G	4	10	Panal Adulto	Affective Protect  G 4/10	151
-Arteli	Cotidian clásico 	M	4	10	Panal Adulto	Cotidian clásico  M 4/10	127
-Arteli	Cotidian clásico 	G	4	10	Panal Adulto	Cotidian clásico  G 4/10	128
+Arteli	Cotidian cl√°sico 	M	4	10	Panal Adulto	Cotidian cl√°sico  M 4/10	127
+Arteli	Cotidian cl√°sico 	G	4	10	Panal Adulto	Cotidian cl√°sico  G 4/10	128
 Arteli	Cotidian plus 	M	4	10	Panal Adulto	Cotidian plus  M 4/10	152
 Arteli	Cotidian plus 	G	4	10	Panal Adulto	Cotidian plus  G 4/10	153
 Arteli	Tena Confort  	CH	4	10	Panal Adulto	Tena Confort   CH 4/10	154
@@ -350,23 +350,23 @@ Alsuper	Babysec Ultra	M	4	40	Panal Bebe	Babysec Ultra M 4/40	71
 Alsuper	Babysec Ultra	G	4	40	Panal Bebe	Babysec Ultra G 4/40	72
 Alsuper	Babysec Ultra	XG	4	40	Panal Bebe	Babysec Ultra XG 4/40	73
 Alsuper	Babysec Ultra	XXG	4	40	Panal Bebe	Babysec Ultra XXG 4/40	74
-Alsuper	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Alsuper	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Alsuper	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Alsuper	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Alsuper	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-Alsuper	Chicolastic 	NA		120	Toalla Húmeda	Chicolastic  NA/120	93
-Alsuper	BB Tips 	NA		100	Toalla Húmeda	BB Tips  NA/100	94
-Alsuper	Babysec	NA		20	Toalla Húmeda	Babysec NA/20	95
-Alsuper	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-Alsuper	Soft Dreams	NA		80	Toalla Húmeda	Soft Dreams NA/80	97
-Alsuper	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-Alsuper	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Alsuper	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Alsuper	My Bebe	NA		80	Toalla Húmeda	My Bebe NA/80	101
-Alsuper	Kanggis	NA		120	Toalla Húmeda	Kanggis NA/120	102
-Alsuper	Kotex  Anatómica con Alas	NA		10	Toalla Femenina	Kotex  Anatómica con Alas NA/10	106
-Alsuper	Kotex  Anatómica sin Alas	NA		10	Toalla Femenina	Kotex  Anatómica sin Alas NA/10	107
+Alsuper	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Alsuper	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Alsuper	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Alsuper	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Alsuper	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+Alsuper	Chicolastic 	NA		120	Toalla H√∫meda	Chicolastic  NA/120	93
+Alsuper	BB Tips 	NA		100	Toalla H√∫meda	BB Tips  NA/100	94
+Alsuper	Babysec	NA		20	Toalla H√∫meda	Babysec NA/20	95
+Alsuper	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+Alsuper	Soft Dreams	NA		80	Toalla H√∫meda	Soft Dreams NA/80	97
+Alsuper	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+Alsuper	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Alsuper	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Alsuper	My Bebe	NA		80	Toalla H√∫meda	My Bebe NA/80	101
+Alsuper	Kanggis	NA		120	Toalla H√∫meda	Kanggis NA/120	102
+Alsuper	Kotex  Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica con Alas NA/10	106
+Alsuper	Kotex  Anat√≥mica sin Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica sin Alas NA/10	107
 Alsuper	Kotex Nocturna 	NA		10	Toalla Femenina	Kotex Nocturna  NA/10	108
 Alsuper	Fiore sin limites con alas	NA		8	Toalla Femenina	Fiore sin limites con alas NA/8	145
 Alsuper	Fiore Sin limites sin alas	NA		8	Toalla Femenina	Fiore Sin limites sin alas NA/8	110
@@ -385,8 +385,8 @@ Alsuper	Affective Predoblado 	PREDOBLADO	4	10	Panal Adulto	Affective Predoblado 
 Alsuper	Affective Protect 	M	4	10	Panal Adulto	Affective Protect  M 4/10	123
 Alsuper	Affective Protect 	G	4	10	Panal Adulto	Affective Protect  G 4/10	151
 Alsuper	Cotidian 	CC	4	10	Panal Adulto	Cotidian  CC 4/10	126
-Alsuper	Cotidian clásico 	M	4	10	Panal Adulto	Cotidian clásico  M 4/10	127
-Alsuper	Cotidian clásico 	G	4	10	Panal Adulto	Cotidian clásico  G 4/10	128
+Alsuper	Cotidian cl√°sico 	M	4	10	Panal Adulto	Cotidian cl√°sico  M 4/10	127
+Alsuper	Cotidian cl√°sico 	G	4	10	Panal Adulto	Cotidian cl√°sico  G 4/10	128
 Alsuper	Tena Confort  	M	4	10	Panal Adulto	Tena Confort   M 4/10	150
 Alsuper	Tena Confort  	G	4	10	Panal Adulto	Tena Confort   G 4/10	129
 Alsuper	Tena maxi protect	CH-M		10	Panal Adulto	Tena maxi protect CH-M/10	131
@@ -449,14 +449,14 @@ Chedraui	Soft Dreams  	XG	2	56	Panal Bebe	Soft Dreams   XG 2/56	81
 Chedraui	GREAT DAY	G	4	40	Panal Bebe	GREAT DAY G 4/40	84
 Chedraui	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
 Chedraui	GREAT DAY	XXG	4	40	Panal Bebe	GREAT DAY XXG 4/40	86
-Chedraui	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Chedraui	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-Chedraui	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-Chedraui	Chicolastic 	NA		120	Toalla Húmeda	Chicolastic  NA/120	93
-Chedraui	BB Tips 	NA		100	Toalla Húmeda	BB Tips  NA/100	94
-Chedraui	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Chedraui	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Chedraui	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
+Chedraui	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Chedraui	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+Chedraui	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+Chedraui	Chicolastic 	NA		120	Toalla H√∫meda	Chicolastic  NA/120	93
+Chedraui	BB Tips 	NA		100	Toalla H√∫meda	BB Tips  NA/100	94
+Chedraui	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Chedraui	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Chedraui	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
 Chedraui	Depend plenitud 	G		10	Panal Adulto	Depend plenitud  G/10	116
 Chedraui	Diapro predoblado gel 	PREDOBLADO		10	Panal Adulto	Diapro predoblado gel  PREDOBLADO/10	119
 Chedraui	Affective Advance	M	4	10	Panal Adulto	Affective Advance M 4/10	120
@@ -540,23 +540,23 @@ Merco	BRAZIL	CH	4	40	Panal Bebe	BRAZIL CH 4/40	166
 Merco	BRAZIL	MED	4	40	Panal Bebe	BRAZIL MED 4/40	167
 Merco	BRAZIL	G	4	40	Panal Bebe	BRAZIL G 4/40	168
 Merco	BRAZIL	XG	4	40	Panal bebe	BRAZIL XG 4/40	169
-Merco	Absorsec	NA		90	Toalla Húmeda	Absorsec NA/90	142
-Merco	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-Merco	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-Merco	Chicolastic 	NA		120	Toalla Húmeda	Chicolastic  NA/120	93
-Merco	BB Tips 	NA		100	Toalla Húmeda	BB Tips  NA/100	94
-Merco	Babysec	NA		20	Toalla Húmeda	Babysec NA/20	95
-Merco	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-Merco	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-Merco	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-Merco	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-Merco	Dodys relajante	NA		100	Toalla Húmeda	Dodys relajante NA/100	143
-Merco	SKIN BALANCE	NA		120	Toalla Húmeda	SKIN BALANCE NA/120	170
-Merco	ULTRA SENSITIVE	NA		80	Toalla Húmeda	ULTRA SENSITIVE NA/80	171
-Merco	BABY SKY	NA		80	Toalla Húmeda	BABY SKY NA/80	172
-Merco	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-Merco	Kotex  Anatómica con Alas	NA		10	Toalla Femenina	Kotex  Anatómica con Alas NA/10	106
-Merco	Kotex  Anatómica sin Alas	NA		10	Toalla Femenina	Kotex  Anatómica sin Alas NA/10	107
+Merco	Absorsec	NA		90	Toalla H√∫meda	Absorsec NA/90	142
+Merco	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+Merco	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+Merco	Chicolastic 	NA		120	Toalla H√∫meda	Chicolastic  NA/120	93
+Merco	BB Tips 	NA		100	Toalla H√∫meda	BB Tips  NA/100	94
+Merco	Babysec	NA		20	Toalla H√∫meda	Babysec NA/20	95
+Merco	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+Merco	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+Merco	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+Merco	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+Merco	Dodys relajante	NA		100	Toalla H√∫meda	Dodys relajante NA/100	143
+Merco	SKIN BALANCE	NA		120	Toalla H√∫meda	SKIN BALANCE NA/120	170
+Merco	ULTRA SENSITIVE	NA		80	Toalla H√∫meda	ULTRA SENSITIVE NA/80	171
+Merco	BABY SKY	NA		80	Toalla H√∫meda	BABY SKY NA/80	172
+Merco	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+Merco	Kotex  Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica con Alas NA/10	106
+Merco	Kotex  Anat√≥mica sin Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica sin Alas NA/10	107
 Merco	Kotex Nocturna 	NA		10	Toalla Femenina	Kotex Nocturna  NA/10	108
 Merco	Fiore sin limites con alas	NA		8	Toalla Femenina	Fiore sin limites con alas NA/8	145
 Merco	Fiore sin limites con alas	NA		14	Toalla Femenina	Fiore sin limites con alas NA/14	109
@@ -668,24 +668,24 @@ HEB	GREAT DAY	XG	4	40	Panal Bebe	GREAT DAY XG 4/40	85
 HEB	GREAT DAY	XXG	4	40	Panal Bebe	GREAT DAY XXG 4/40	86
 HEB	GREAT DAY	XG	4	80	Panal Bebe	GREAT DAY XG 4/80	87
 HEB	GREAT DAY	XXG	4	80	Panal Bebe	GREAT DAY XXG 4/80	88
-HEB	Absorsec	NA		120	Toalla Húmeda	Absorsec NA/120	89
-HEB	Suavelastic	NA		100	Toalla Húmeda	Suavelastic NA/100	90
-HEB	Kimbies	NA		90	Toalla Húmeda	Kimbies NA/90	91
-HEB	BIO BABY	NA		80	Toalla Húmeda	BIO BABY NA/80	92
-HEB	BB Tips 	NA		100	Toalla Húmeda	BB Tips  NA/100	94
-HEB	Babysec	NA		80	Toalla Húmeda	Babysec NA/80	96
-HEB	Soft Dreams	NA		80	Toalla Húmeda	Soft Dreams NA/80	97
-HEB	Dodys Avena	NA		80	Toalla Húmeda	Dodys Avena NA/80	98
-HEB	Dodys Rosa	NA		80	Toalla Húmeda	Dodys Rosa NA/80	99
-HEB	Dodys Azul	NA		80	Toalla Húmeda	Dodys Azul NA/80	100
-HEB	Dodys relajante	NA		100	Toalla Húmeda	Dodys relajante NA/100	143
-HEB	Baby Bebé			80	Toalla Húmeda	Baby Bebé/80	144
-HEB	BABY SKY	NA		80	Toalla Húmeda	BABY SKY NA/80	172
-HEB	Kanggis	NA		120	Toalla Húmeda	Kanggis NA/120	102
-HEB	BabySec	NA		50	Toalla Húmeda	BabySec NA/50	103
-HEB	GREAT DAY	NA		240	Toalla Húmeda	GREAT DAY NA/240	104
-HEB	GREAT DAY	NA		80	Toalla Húmeda	GREAT DAY NA/80	105
-HEB	Kotex  Anatómica con Alas	NA		10	Toalla Femenina	Kotex  Anatómica con Alas NA/10	106
+HEB	Absorsec	NA		120	Toalla H√∫meda	Absorsec NA/120	89
+HEB	Suavelastic	NA		100	Toalla H√∫meda	Suavelastic NA/100	90
+HEB	Kimbies	NA		90	Toalla H√∫meda	Kimbies NA/90	91
+HEB	BIO BABY	NA		80	Toalla H√∫meda	BIO BABY NA/80	92
+HEB	BB Tips 	NA		100	Toalla H√∫meda	BB Tips  NA/100	94
+HEB	Babysec	NA		80	Toalla H√∫meda	Babysec NA/80	96
+HEB	Soft Dreams	NA		80	Toalla H√∫meda	Soft Dreams NA/80	97
+HEB	Dodys Avena	NA		80	Toalla H√∫meda	Dodys Avena NA/80	98
+HEB	Dodys Rosa	NA		80	Toalla H√∫meda	Dodys Rosa NA/80	99
+HEB	Dodys Azul	NA		80	Toalla H√∫meda	Dodys Azul NA/80	100
+HEB	Dodys relajante	NA		100	Toalla H√∫meda	Dodys relajante NA/100	143
+HEB	Baby Beb√©			80	Toalla H√∫meda	Baby Beb√©/80	144
+HEB	BABY SKY	NA		80	Toalla H√∫meda	BABY SKY NA/80	172
+HEB	Kanggis	NA		120	Toalla H√∫meda	Kanggis NA/120	102
+HEB	BabySec	NA		50	Toalla H√∫meda	BabySec NA/50	103
+HEB	GREAT DAY	NA		240	Toalla H√∫meda	GREAT DAY NA/240	104
+HEB	GREAT DAY	NA		80	Toalla H√∫meda	GREAT DAY NA/80	105
+HEB	Kotex  Anat√≥mica con Alas	NA		10	Toalla Femenina	Kotex  Anat√≥mica con Alas NA/10	106
 HEB	Kotex Nocturna 	NA		10	Toalla Femenina	Kotex Nocturna  NA/10	108
 HEB	Saba Confort Noctura	NA		8	Toalla Femenina	Saba Confort Noctura NA/8	148
 HEB	Saba Confort  Regular	NA		8	Toalla Femenina	Saba Confort  Regular NA/8	114
@@ -701,8 +701,8 @@ HEB	Affective Protect 	G	4	10	Panal Adulto	Affective Protect  G 4/10	151
 HEB	Affective Ropa Interior 	M	4	10	Panal Adulto	Affective Ropa Interior  M 4/10	124
 HEB	Affective Ropa Interior 	G	4	10	Panal Adulto	Affective Ropa Interior  G 4/10	125
 HEB	Cotidian 	CC	4	10	Panal Adulto	Cotidian  CC 4/10	126
-HEB	Cotidian clásico 	M	4	10	Panal Adulto	Cotidian clásico  M 4/10	127
-HEB	Cotidian clásico 	G	4	10	Panal Adulto	Cotidian clásico  G 4/10	128
+HEB	Cotidian cl√°sico 	M	4	10	Panal Adulto	Cotidian cl√°sico  M 4/10	127
+HEB	Cotidian cl√°sico 	G	4	10	Panal Adulto	Cotidian cl√°sico  G 4/10	128
 HEB	Cotidian plus 	M	4	10	Panal Adulto	Cotidian plus  M 4/10	152
 HEB	Cotidian plus 	G	4	10	Panal Adulto	Cotidian plus  G 4/10	153
 HEB	Cotidian plus 	M	2	20	Panal Adulto	Cotidian plus  M 2/20	173
@@ -730,11 +730,11 @@ HEB	BumCo	G	4	40	Panal Bebe	BumCo G 4/40	179
 HEB	BumCo	XG	4	40	Panal Bebe	BumCo XG 4/40	180
 HEB	BumCo	XXG	4	40	Panal Bebe	BumCo XXG 4/40	181
 HEB	BumCo	XXXG	4	40	Panal Bebe	BumCo XXXG 4/40	182
-Soriana	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-HEB	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-Mi Tienda Del Ahorro	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-Arteli	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
-Chedraui	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
+Soriana	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+HEB	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+Mi Tienda Del Ahorro	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+Arteli	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
+Chedraui	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
 Chedraui	BumCo	RN	4	40	Panal Bebe	BumCo RN 4/40	176
 Chedraui	BumCo	CH	4	40	Panal Bebe	BumCo CH 4/40	177
 Chedraui	BumCo	M	4	40	Panal Bebe	BumCo M 4/40	178
@@ -742,7 +742,7 @@ Chedraui	BumCo	G	4	40	Panal Bebe	BumCo G 4/40	179
 Chedraui	BumCo	XG	4	40	Panal Bebe	BumCo XG 4/40	180
 Chedraui	BumCo	XXG	4	40	Panal Bebe	BumCo XXG 4/40	181
 Chedraui	BumCo	XXXG	4	40	Panal Bebe	BumCo XXXG 4/40	182
-Merco	BumCo	TH		100	Toalla Húmeda	BumCo TH/100	183
+Merco	BumCo	TH		100	Toalla H√∫meda	BumCo TH/100	183
 Merco	BumCo	RN	4	40	Panal Bebe	BumCo RN 4/40	176
 Merco	BumCo	CH	4	40	Panal Bebe	BumCo CH 4/40	177
 Merco	BumCo	M	4	40	Panal Bebe	BumCo M 4/40	178
@@ -773,9 +773,9 @@ Merco	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Merco	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Merco	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Merco	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Merco	Bebin Super	NA	24	40	Toalla Húmeda	Bebin Super NA 24/40	207
-Merco	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Merco	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Merco	Bebin Super	NA	24	40	Toalla H√∫meda	Bebin Super NA 24/40	207
+Merco	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Merco	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
 Merco	Dignity	M	4	10	Panal Adulto	Dignity M 4/10	210
 Merco	Dignity	G	4	10	Panal Adulto	Dignity G 4/10	211
 Merco	Dignity	CC	4	10	Panal Adulto	Dignity CC 4/10	212
@@ -789,7 +789,7 @@ HEB	Bebin Super	G	4	40	Panal Bebe	Bebin Super G 4/40	192
 HEB	Bebin Super	XG	4	40	Panal Bebe	Bebin Super XG 4/40	193
 HEB	Bebin Super	XXG	4	40	Panal Bebe	Bebin Super XXG 4/40	194
 HEB	Bebin Super	XXXG	4	40	Panal Bebe	Bebin Super XXXG 4/40	195
-HEB	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
+HEB	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
 HEB	Cordial	M	4	10	Panal Adulto	Cordial M 4/10	218
 HEB	Cordial	G	4	10	Panal Adulto	Cordial G 4/10	219
 HEB	Cordial	CC	4	10	Panal Adulto	Cordial CC 4/10	220
@@ -802,8 +802,8 @@ Mi Tienda Del Ahorro	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Mi Tienda Del Ahorro	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Mi Tienda Del Ahorro	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Mi Tienda Del Ahorro	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Mi Tienda Del Ahorro	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Mi Tienda Del Ahorro	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Mi Tienda Del Ahorro	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Mi Tienda Del Ahorro	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
 Mi Tienda Del Ahorro	Dignity	M	4	10	Panal Adulto	Dignity M 4/10	210
 Mi Tienda Del Ahorro	Cordial	M	4	10	Panal Adulto	Cordial M 4/10	218
 Mi Tienda Del Ahorro	Cordial	G	4	10	Panal Adulto	Cordial G 4/10	219
@@ -818,7 +818,7 @@ Del Sol	Bebin Super	M	4	40	Panal Bebe	Bebin Super M 4/40	191
 Del Sol	Bebin Super	G	4	40	Panal Bebe	Bebin Super G 4/40	192
 Del Sol	Bebin Super	XG	4	40	Panal Bebe	Bebin Super XG 4/40	193
 Del Sol	Bebin Super	XXXG	4	40	Panal Bebe	Bebin Super XXXG 4/40	195
-Del Sol	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
+Del Sol	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
 Del Sol	Tapete Woofs	NA	6	10	Mascotas	Tapete Woofs NA 6/10	217
 Arteli	Bebin Super	M	4	40	Panal Bebe	Bebin Super M 4/40	191
 Arteli	Bebin Super	G	4	40	Panal Bebe	Bebin Super G 4/40	192
@@ -829,9 +829,9 @@ Arteli	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Arteli	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Arteli	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Arteli	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Arteli	Bebin Super	NA	24	40	Toalla Húmeda	Bebin Super NA 24/40	207
-Arteli	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Arteli	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Arteli	Bebin Super	NA	24	40	Toalla H√∫meda	Bebin Super NA 24/40	207
+Arteli	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Arteli	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
 Arteli	Feelings regular	NA		8	Toalla Femenina	Feelings regular NA/8	215
 Arteli	Feelings nocturna	NA		8	Toalla Femenina	Feelings nocturna NA/8	216
 Arteli	Clean & Pure	NA		40	Toalla Antibacterial	Clean & Pure NA/40	221
@@ -845,6 +845,6 @@ Alsuper	Tiny	M	4	40	Panal Bebe	Tiny M 4/40	203
 Alsuper	Tiny	G	4	40	Panal Bebe	Tiny G 4/40	204
 Alsuper	Tiny	XG	4	40	Panal Bebe	Tiny XG 4/40	205
 Alsuper	Tiny	XXG	4	40	Panal Bebe	Tiny XXG 4/40	206
-Alsuper	Bebin Super	NA	24	40	Toalla Húmeda	Bebin Super NA 24/40	207
-Alsuper	Bebin Super	NA	18	80	Toalla Húmeda	Bebin Super NA 18/80	208
-Alsuper	Tiny	NA	18	80	Toalla Húmeda	Tiny NA 18/80	209
+Alsuper	Bebin Super	NA	24	40	Toalla H√∫meda	Bebin Super NA 24/40	207
+Alsuper	Bebin Super	NA	18	80	Toalla H√∫meda	Bebin Super NA 18/80	208
+Alsuper	Tiny	NA	18	80	Toalla H√∫meda	Tiny NA 18/80	209
