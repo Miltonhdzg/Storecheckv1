@@ -291,14 +291,64 @@
       0x9C: 'ú'
     };
 
+    function limpiarTexto(valor){
+      return (valor ?? '')
+        .toString()
+        .replace(/\s+/g, ' ')
+        .trim();
+    }
+
+    function capitalizarEtiqueta(valor){
+      return limpiarTexto(valor)
+        .toLocaleLowerCase('es-MX')
+        .split(' ')
+        .map(palabra => palabra
+          ? palabra.charAt(0).toLocaleUpperCase('es-MX') + palabra.slice(1)
+          : ''
+        )
+        .join(' ');
+    }
+
+    function claveCanonica(valor){
+      return limpiarTexto(valor)
+        .toLocaleLowerCase('es-MX')
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function preferirEtiqueta(actual, siguiente){
+      if(!actual) return siguiente;
+      const actualAscii = /^[\x00-\x7F]*$/.test(actual);
+      const siguienteAscii = /^[\x00-\x7F]*$/.test(siguiente);
+      if(actualAscii && !siguienteAscii) return siguiente;
+      return actual;
+    }
+
     function normalizarDatos(){
       Object.keys(PRODUCTOS_POR_CADENA).forEach(cadena=>{
-        PRODUCTOS_POR_CADENA[cadena] = (PRODUCTOS_POR_CADENA[cadena]||[]).map(item=>({
-          producto: item.Producto ?? item.producto ?? '',
-          marca: item.Marca ?? item.marca ?? '',
-          segmento: item.Segmento ?? item.segmento ?? item.Familia ?? item.familia ?? '',
-          codigo: item['Codigo Producto'] ?? item.codigo ?? item.Codigo ?? ''
-        }));
+        const familiasCanonicas = new Map();
+        PRODUCTOS_POR_CADENA[cadena] = (PRODUCTOS_POR_CADENA[cadena]||[]).map(item=>{
+          const segmentoOriginal = item.Segmento ?? item.segmento ?? item.Familia ?? item.familia ?? '';
+          const segmentoLimpio = limpiarTexto(segmentoOriginal);
+          const segmentoClave = claveCanonica(segmentoLimpio);
+          const segmentoPropuesto = segmentoLimpio ? capitalizarEtiqueta(segmentoLimpio) : '';
+          const segmento = segmentoLimpio
+            ? preferirEtiqueta(familiasCanonicas.get(segmentoClave), segmentoPropuesto)
+            : '';
+
+          if(segmentoClave && !familiasCanonicas.has(segmentoClave)){
+            familiasCanonicas.set(segmentoClave, segmento);
+          }else if(segmentoClave){
+            familiasCanonicas.set(segmentoClave, segmento);
+          }
+
+          return {
+            producto: limpiarTexto(item.Producto ?? item.producto ?? ''),
+            marca: limpiarTexto(item.Marca ?? item.marca ?? ''),
+            segmento,
+            codigo: limpiarTexto(item['Codigo Producto'] ?? item.codigo ?? item.Codigo ?? '')
+          };
+        });
       });
     }
 
