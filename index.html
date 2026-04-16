@@ -281,7 +281,7 @@
       "Aguascalientes","Baja California","Baja California Sur","Campeche","Chiapas","Chihuahua","Ciudad de México","Coahuila","Colima","Durango","Estado de México","Guanajuato","Guerrero","Hidalgo","Jalisco","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlaxcala","Veracruz","Yucatán","Zacatecas"
     ];
 
-    const DATA_URL = 'store_check_v2.txt';
+    const CATALOGO_URL = 'https://script.google.com/macros/s/AKfycbz0nlveTzDA5sAn9O6ToIit-T_maUhwAyoyhN-XsKeTKC5gLFFVeIghs00aGHMqcbyXKA/exec?action=catalogo';
     let PRODUCTOS_POR_CADENA = {};
     const PROMOCIONES = ['Oferta', '2x1', '3x2', '5x3'];
     const LEGACY_CHAR_MAP = {
@@ -558,56 +558,53 @@
       promosMem.clear();
       mostrarMsg('success','Formulario reiniciado.');
     });
+    //////
+async function cargarProductosDesdeSheets(){
+  try{
+    const res = await fetch(CATALOGO_URL, { cache: 'no-store' });
+    if(!res.ok) throw new Error('No se pudo leer el catalogo');
 
-    async function cargarProductosDesdeTxt(){
-      try{
-        const res = await fetch(DATA_URL, {cache:'no-store'});
-        if(!res.ok) throw new Error(`No se pudo leer ${DATA_URL}`);
-        const buffer = await res.arrayBuffer();
-        const text = decodificarTextoMixto(buffer);
-        const lines = text.split(/\r?\n/).filter(l=>l.trim().length>0);
-        if(lines.length===0) throw new Error(`${DATA_URL} vacío`);
+    const json = await res.json();
+    if(!json.ok) throw new Error(json.error || 'Respuesta invalida del catalogo');
 
-        const headers = lines[0].split('\t').map(h=>h.trim());
-        const idx = (name)=>headers.indexOf(name);
-        const iCadena = idx('Cadena');
-        const iMarca = idx('Marca');
-        const iProducto = idx('Producto');
-        const iFamilia = idx('Familia');
-        const iCodigo = idx('Codigo Producto');
+    const rows = Array.isArray(json.rows) ? json.rows : [];
+    PRODUCTOS_POR_CADENA = {};
 
-        PRODUCTOS_POR_CADENA = {};
+    for (const item of rows) {
+      const cadena = limpiarTexto(item['Cadena']);
+      const marca = limpiarTexto(item['Marca']);
+      const producto = limpiarTexto(item['Producto']);
+      const familia = limpiarTexto(item['Familia']);
+      const codigo = limpiarTexto(item['Codigo Producto']);
 
-        for(let i=1;i<lines.length;i++){
-          const cols = lines[i].split('\t');
-          const cadena = (cols[iCadena]||'').trim();
-          const marca = (cols[iMarca]||'').trim();
-          const producto = (cols[iProducto]||'').trim();
-          const familia = (cols[iFamilia]||'').trim();
-          const codigo = (cols[iCodigo]||'').trim();
+      if (!cadena || !producto) continue;
+      if (!PRODUCTOS_POR_CADENA[cadena]) PRODUCTOS_POR_CADENA[cadena] = [];
 
-          if(!cadena || !producto) continue;
-          if(!PRODUCTOS_POR_CADENA[cadena]) PRODUCTOS_POR_CADENA[cadena]=[];
-          PRODUCTOS_POR_CADENA[cadena].push({
-            producto,
-            marca,
-            segmento: familia,
-            codigo
-          });
-        }
-
-        normalizarDatos();
-        poblarCadenas();
-      }catch(err){
-        mostrarMsg('error',`No se pudo cargar ${DATA_URL}. Abre la página desde un servidor local.`);
-      }
+      PRODUCTOS_POR_CADENA[cadena].push({
+        producto,
+        marca,
+        segmento: familia,
+        codigo
+      });
     }
+
+    normalizarDatos();
+    poblarCadenas();
+  }catch(err){
+    mostrarMsg('error','No se pudo cargar el catalogo desde Google Sheets.');
+  }
+}
+
+
+
+    /////////////////
 
     const ENDPOINT = "https://script.google.com/macros/s/AKfycbz0nlveTzDA5sAn9O6ToIit-T_maUhwAyoyhN-XsKeTKC5gLFFVeIghs00aGHMqcbyXKA/exec";
     const API_TOKEN = "10152021"; // el mismo del Apps Script
 
     poblarEstados();
-    cargarProductosDesdeTxt();
+    cargarProductosDesdeSheets();
+
 
     /* === ENVÍO === */
     document.getElementById('formPrecios').addEventListener('submit', async e=>{
