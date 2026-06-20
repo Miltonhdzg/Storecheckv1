@@ -990,14 +990,14 @@ async function cargarProductosDesdeSheets(){
       const items=[];
 
       for(const tr of filas){
-        const prod=(tr.querySelector('.producto').value||'').trim();
+        const producto=limpiarTexto(tr.querySelector('.producto').textContent);
         const marca=tr.dataset.marca||'';
         const promo=tr.querySelector('.promo').value || PROMOCIONES[0];
         const codigo=tr.dataset.codigo||'';
         let pr=normalizarPrecio(tr.querySelector('.precio').value.trim());
         if(!pr) continue;
         pr=formateaDinero(pr);
-        items.push({prod,marca,promo,codigo,pr});
+        items.push({prod:producto,producto,marca,promo,codigo,pr});
       }
 
       if(items.length===0)
