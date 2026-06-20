@@ -7,53 +7,72 @@
 
   <style>
     :root {
-      --bg:#111a2e; --card:#111827; --muted:#94a3b8;
-      --text:#e2e8f0; --accent:#22c55e; --border:#1f2937;
+      --bg:#F8FAFC;
+      --card:#FFFFFF;
+      --primary:#3B82F6;
+      --primary-hover:#2563EB;
+      --secondary:#60A5FA;
+      --success:#22C55E;
+      --warning:#F59E0B;
+      --error:#EF4444;
+      --text:#1F2937;
+      --muted:#6B7280;
+      --border:#E5E7EB;
     }
 
     *{ box-sizing:border-box }
-    html,body{ height:100% }
+    html,body{ min-height:100% }
     body{
       margin:0;
       font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,Cantarell,Noto Sans,Helvetica,Arial;
-      background:linear-gradient(180deg,#0b1223,#0f172a);
+      background:var(--bg);
       color:var(--text);
+      line-height:1.45;
     }
 
-    /* === CONTENEDORES OPTIMIZADOS PARA MÓVIL === */
     .container{
-      max-width:980px;
-      margin:12px auto;
-      padding:0 8px;
+      max-width:1080px;
+      margin:20px auto;
+      padding:0 16px;
     }
 
     .card{
-      background:linear-gradient(180deg,#0e1527,#0b1020);
+      background:var(--card);
       border:1px solid var(--border);
-      border-radius:18px;
-      box-shadow:0 10px 30px rgba(2,6,23,.6);
+      border-radius:8px;
+      box-shadow:0 18px 45px rgba(31,41,55,.08);
       overflow:hidden;
-      min-height:100vh;
+      min-height:calc(100vh - 40px);
       display:flex;
       flex-direction:column;
     }
 
     header{
-      padding:14px 16px 8px;
+      padding:20px 22px 16px;
+      border-top:4px solid var(--primary);
       border-bottom:1px solid var(--border);
+      background:var(--card);
     }
-    header h1{ margin:0 0 6px; font-size:20px; letter-spacing:.2px }
-    header p{ margin:0; color:var(--muted); font-size:14px }
+    header h1{
+      margin:0 0 4px;
+      font-size:24px;
+      font-weight:700;
+      color:var(--text);
+    }
+    header p{
+      margin:0;
+      color:var(--muted);
+      font-size:14px;
+    }
 
     form{
-      padding:12px 12px 16px;
+      padding:18px 22px 20px;
       flex:1;
       display:flex;
       flex-direction:column;
-      gap:12px;
+      gap:16px;
     }
 
-    /* === GRID === */
     .grid{
       display:grid;
       grid-template-columns:repeat(12,1fr);
@@ -63,38 +82,85 @@
     .col-6{ grid-column:span 6 }
     .col-12{ grid-column:span 12 }
 
-    /* === CAMPOS === */
     label{
-      display:block; font-size:13px;
-      color:var(--muted); margin:6px 0 6px;
+      display:block;
+      margin:0 0 6px;
+      color:var(--text);
+      font-size:13px;
+      font-weight:600;
     }
 
     select,
     input[type=text],
     textarea{
-      width:100%; padding:10px 12px;
-      border-radius:10px; border:1px solid var(--border);
-      background:#0b1223; color:var(--text);
+      width:100%;
+      padding:10px 12px;
+      border:1px solid var(--border);
+      border-radius:8px;
+      background:var(--card);
+      color:var(--text);
       outline:none;
+      font:inherit;
+      transition:border-color .15s ease, box-shadow .15s ease, background-color .15s ease;
     }
+
+    select:hover,
+    input[type=text]:hover,
+    textarea:hover{
+      border-color:var(--secondary);
+    }
+
+    select:focus,
+    input[type=text]:focus,
+    textarea:focus{
+      border-color:var(--primary);
+      box-shadow:0 0 0 3px rgba(59,130,246,.16);
+    }
+
+    input::placeholder{ color:var(--muted) }
 
     textarea{
       resize:none;
-      line-height:1.25;
+      line-height:1.3;
       white-space:normal;
       overflow-wrap:anywhere;
     }
 
-    select:focus,
-    input:focus{ border-color:#334155 }
+    textarea[readonly]{
+      background:var(--bg);
+      cursor:default;
+    }
 
-    /* === TABLA === */
-    table{ width:100%; border-collapse:collapse; table-layout:fixed }
+    table{
+      width:100%;
+      border-collapse:separate;
+      border-spacing:0;
+      table-layout:fixed;
+    }
+
+    thead th{
+      position:sticky;
+      top:0;
+      z-index:1;
+      background:var(--bg);
+    }
+
     th,td{
       border-bottom:1px solid var(--border);
-      padding:10px 8px; text-align:left; vertical-align:top;
+      padding:10px 8px;
+      text-align:left;
+      vertical-align:top;
     }
-    th{ color:var(--muted); font-weight:600; font-size:13px }
+    th{
+      color:var(--muted);
+      font-weight:700;
+      font-size:12px;
+      text-transform:uppercase;
+    }
+
+    tbody tr:nth-child(even){ background:#FFFFFF }
+    tbody tr:nth-child(odd){ background:var(--bg) }
+    tbody tr:hover{ background:rgba(96,165,250,.12) }
 
     #tablaProductos th:nth-child(1),
     #tablaProductos td:nth-child(1){ width:55% }
@@ -105,13 +171,26 @@
     #tablaProductos th:nth-child(3),
     #tablaProductos td:nth-child(3){ width:20% }
 
+    /* Producto: optimizado para nombres largos
+       - usamos truncado multilinea (2 líneas) con ellipsis
+       - diseño compacto y sin bordes extra para ahorrar espacio */
     #tablaProductos .producto{
-      min-height:60px;
-      height:auto;
+      padding:10px 12px;
+      border-radius:8px;
+      background:transparent;
+      font-size:16px;
+      line-height:1.25;
+      margin:0;
+      max-height:2.6em; /* ~2 líneas */
+      overflow:hidden;
+      display:-webkit-box;
+      -webkit-line-clamp:2;
+      -webkit-box-orient:vertical;
+      text-overflow:ellipsis;
+      white-space:normal;
       word-break:break-word;
     }
 
-    /* WRAPPER CON SCROLL */
     .productos-section{
       display:flex;
       flex-direction:column;
@@ -123,63 +202,273 @@
     .tabla-wrapper{
       margin-top:6px;
       border:1px solid var(--border);
-      border-radius:12px;
+      border-radius:8px;
       overflow:auto;
       flex:1;
       min-height:0;
+      background:var(--card);
     }
 
-    /* === BOTONES === */
     .btn{
       appearance:none;
       border:1px solid var(--border);
-      background:#0b1223;
+      background:var(--card);
       color:var(--text);
-      padding:10px 14px;
-      border-radius:12px;
+      padding:10px 16px;
+      border-radius:8px;
       cursor:pointer;
-      font-weight:600;
+      font-weight:700;
+      font:inherit;
+      min-height:42px;
+      transition:background-color .15s ease, border-color .15s ease, color .15s ease, box-shadow .15s ease;
     }
-    .btn:hover{ filter:brightness(1.05) }
+    .btn:hover{
+      border-color:var(--secondary);
+      color:var(--primary-hover);
+    }
+    .btn:disabled{
+      opacity:.65;
+      cursor:not-allowed;
+    }
+    .btn:focus-visible{
+      outline:none;
+      box-shadow:0 0 0 3px rgba(59,130,246,.18);
+    }
 
     .btn-primary{
-      background:var(--accent);
-      color:#052e16;
-      border-color:#16a34a;
+      background:var(--primary);
+      color:#FFFFFF;
+      border-color:var(--primary);
+    }
+    .btn-primary:hover{
+      background:var(--primary-hover);
+      border-color:var(--primary-hover);
+      color:#FFFFFF;
     }
 
     .footer{
-      padding:10px 12px 14px;
+      padding:14px 22px 18px;
       display:flex;
-      gap:10px;
+      gap:14px;
       border-top:1px solid var(--border);
       align-items:center;
       justify-content:space-between;
       flex-shrink:0;
+      background:var(--card);
     }
 
-    .hint{ color:var(--muted); font-size:12px; margin-top:4px }
-    .errors{ color:#fecaca; font-size:13px; display:none }
-    .success{ color:#bbf7d0; font-size:13px; display:none }
+    .footer > div:first-child{
+      min-width:0;
+      flex:1;
+    }
 
-    /* === RESPONSIVE MOBILE === */
+    .hint{
+      color:var(--muted);
+      font-size:12px;
+      margin-top:0;
+    }
+    .errors,
+    .success{
+      display:none;
+      width:100%;
+      padding:10px 12px;
+      border-radius:8px;
+      font-size:13px;
+      font-weight:600;
+    }
+    .errors{
+      color:var(--error);
+      background:rgba(239,68,68,.08);
+      border:1px solid rgba(239,68,68,.22);
+    }
+    .success{
+      color:var(--success);
+      background:rgba(34,197,94,.10);
+      border:1px solid rgba(34,197,94,.24);
+    }
+
+    body.modal-open{ overflow:hidden }
+
+    .modal-backdrop{
+      position:fixed;
+      inset:0;
+      z-index:20;
+      display:grid;
+      place-items:center;
+      padding:20px;
+      background:rgba(31,41,55,.36);
+      backdrop-filter:blur(2px);
+    }
+    .modal-backdrop[hidden]{ display:none }
+
+    .modal{
+      width:min(420px,100%);
+      background:var(--card);
+      border:1px solid var(--border);
+      border-radius:8px;
+      box-shadow:0 24px 60px rgba(31,41,55,.22);
+      padding:18px;
+    }
+
+    .modal-header{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      margin-bottom:16px;
+    }
+
+    .modal-status-icon{
+      width:38px;
+      height:38px;
+      border-radius:50%;
+      display:grid;
+      place-items:center;
+      flex:0 0 auto;
+      background:rgba(59,130,246,.12);
+    }
+    .modal-status-icon::before{
+      content:"";
+      width:14px;
+      height:14px;
+      border-radius:50%;
+      background:var(--primary);
+      animation:pulse 1s ease-in-out infinite;
+    }
+
+    .modal h2{
+      margin:0 0 4px;
+      color:var(--text);
+      font-size:18px;
+      line-height:1.2;
+    }
+
+    .modal p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+    }
+
+    .progress-track{
+      width:100%;
+      height:10px;
+      overflow:hidden;
+      border-radius:999px;
+      background:var(--border);
+    }
+
+    .progress-fill{
+      width:0%;
+      height:100%;
+      border-radius:inherit;
+      background:var(--primary);
+      transition:width .25s ease, background-color .15s ease;
+    }
+
+    .modal-progress-meta{
+      display:flex;
+      justify-content:space-between;
+      gap:12px;
+      margin-top:8px;
+      color:var(--muted);
+      font-size:12px;
+      font-weight:600;
+    }
+
+    .modal-actions{
+      display:flex;
+      justify-content:flex-end;
+      margin-top:16px;
+    }
+
+    .modal.is-success .modal-status-icon{ background:rgba(34,197,94,.12) }
+    .modal.is-success .modal-status-icon::before,
+    .modal.is-success .progress-fill{
+      background:var(--success);
+      animation:none;
+    }
+
+    .modal.is-error .modal-status-icon{ background:rgba(239,68,68,.12) }
+    .modal.is-error .modal-status-icon::before,
+    .modal.is-error .progress-fill{
+      background:var(--error);
+      animation:none;
+    }
+
+    @keyframes pulse{
+      0%,100%{ transform:scale(.85); opacity:.65 }
+      50%{ transform:scale(1.1); opacity:1 }
+    }
+
     @media(max-width:820px){
-      .container{ max-width:100%; margin:0; padding:0 }
-      .card{ border-radius:0; box-shadow:none }
+      .container{
+        max-width:100%;
+        margin:0;
+        padding:0;
+      }
+      .card{
+        min-height:100vh;
+        border-radius:0;
+        border-left:0;
+        border-right:0;
+        box-shadow:none;
+      }
 
-      header h1{ font-size:18px }
-      header p{ font-size:12px }
+      header{ padding:16px 14px 12px }
+      header h1{ font-size:21px }
+      header p{ font-size:13px }
 
-      .grid{ gap:8px }
-      label{ font-size:12px; margin:4px 0 }
+      form{
+        padding:14px;
+        gap:14px;
+      }
 
-      select, input[type=text], textarea{ padding:8px 10px; font-size:14px }
+      .grid{ gap:10px }
+      .col-4,
+      .col-6{ grid-column:span 12 }
 
-      th,td{ padding:6px 4px; font-size:12px }
+      label{ font-size:12px }
 
-      #tablaProductos .producto{ min-height:72px }
+      select,
+      input[type=text],
+      textarea{
+        padding:9px 10px;
+        font-size:14px;
+      }
 
-      .btn{ padding:8px 10px; font-size:13px }
+      th,td{
+        padding:8px 5px;
+        font-size:12px;
+      }
+
+      #tablaProductos th:nth-child(1),
+      #tablaProductos td:nth-child(1){ width:52% }
+
+      #tablaProductos th:nth-child(2),
+      #tablaProductos td:nth-child(2){ width:28% }
+
+      #tablaProductos th:nth-child(3),
+      #tablaProductos td:nth-child(3){ width:20% }
+
+      /* en móvil reduzco alturas y tamaños para aprovechar espacio */
+      #tablaProductos .producto{
+        font-size:15px;
+        max-height:2.8em;
+      }
+
+      .footer{
+        align-items:stretch;
+        flex-direction:column;
+        padding:12px 14px 14px;
+      }
+
+      .footer .btn{
+        flex:1;
+        padding:9px 10px;
+        font-size:14px;
+      }
+
+      .modal-backdrop{ padding:14px }
+      .modal{ padding:16px }
     }
 
   </style>
@@ -250,7 +539,7 @@
 
           <div style="display:flex;gap:10px;">
             <button class="btn" type="button" id="btnLimpiar">Limpiar</button>
-            <button class="btn btn-primary" type="submit">Enviar</button>
+            <button class="btn btn-primary" type="submit" id="btnEnviar">Enviar</button>
           </div>
         </div>
 
@@ -258,10 +547,35 @@
     </div>
   </div>
 
+  <div class="modal-backdrop" id="modalEnvio" hidden aria-hidden="true">
+    <div class="modal" id="modalEnvioCard" role="dialog" aria-modal="true" aria-labelledby="modalEnvioTitulo" aria-describedby="modalEnvioDetalle">
+      <div class="modal-header">
+        <span class="modal-status-icon" aria-hidden="true"></span>
+        <div>
+          <h2 id="modalEnvioTitulo">Enviando precios</h2>
+          <p id="modalEnvioDetalle">Preparando datos.</p>
+        </div>
+      </div>
+
+      <div class="progress-track" id="modalProgreso" role="progressbar" aria-label="Progreso del envio" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0">
+        <div class="progress-fill" id="modalBarra"></div>
+      </div>
+
+      <div class="modal-progress-meta">
+        <span id="modalEtapa">Preparando</span>
+        <span id="modalPorcentaje">0%</span>
+      </div>
+
+      <div class="modal-actions">
+        <button class="btn" type="button" id="modalCerrar" hidden>Cerrar</button>
+      </div>
+    </div>
+  </div>
+
   <!-- === TEMPLATE DE FILA === -->
   <template id="tplFila">
     <tr>
-      <td><textarea class="producto" rows="3" readonly></textarea></td>
+      <td><div class="producto" aria-hidden="false"></div></td>
       <td>
         <select class="promo">
           <option value="Sin Oferta" selected>Sin Oferta</option>
@@ -454,8 +768,17 @@
     const selFamilia = document.getElementById('familia');
     const selEstado = document.getElementById('estado');
     const btnLimpiar = document.getElementById('btnLimpiar');
+    const btnEnviar = document.getElementById('btnEnviar');
     const errorsEl = document.getElementById('errors');
     const okEl = document.getElementById('success');
+    const modalEnvio = document.getElementById('modalEnvio');
+    const modalEnvioCard = document.getElementById('modalEnvioCard');
+    const modalDetalle = document.getElementById('modalEnvioDetalle');
+    const modalEtapa = document.getElementById('modalEtapa');
+    const modalPorcentaje = document.getElementById('modalPorcentaje');
+    const modalProgreso = document.getElementById('modalProgreso');
+    const modalBarra = document.getElementById('modalBarra');
+    const modalCerrar = document.getElementById('modalCerrar');
     const preciosMem = new Map();
     const promosMem = new Map();
 
@@ -476,6 +799,51 @@
         errorsEl.style.display='none';
       }
     }
+
+    function esperar(ms){
+      return new Promise(resolve=>setTimeout(resolve, ms));
+    }
+
+    function setControlesEnvio(desactivado){
+      btnLimpiar.disabled = desactivado;
+      btnEnviar.disabled = desactivado;
+    }
+
+    function actualizarModalEnvio(etapa, detalle, porcentaje){
+      const pct = Math.max(0, Math.min(100, Math.round(porcentaje)));
+      modalEtapa.textContent = etapa;
+      modalDetalle.textContent = detalle;
+      modalPorcentaje.textContent = `${pct}%`;
+      modalBarra.style.width = `${pct}%`;
+      modalProgreso.setAttribute('aria-valuenow', String(pct));
+    }
+
+    function abrirModalEnvio(){
+      modalEnvioCard.classList.remove('is-success','is-error');
+      modalCerrar.hidden = true;
+      actualizarModalEnvio('Preparando', 'Validando precios capturados.', 10);
+      modalEnvio.hidden = false;
+      modalEnvio.setAttribute('aria-hidden','false');
+      document.body.classList.add('modal-open');
+    }
+
+    function cerrarModalEnvio(){
+      modalEnvio.hidden = true;
+      modalEnvio.setAttribute('aria-hidden','true');
+      document.body.classList.remove('modal-open');
+    }
+
+    async function finalizarModalEnvio(tipo, etapa, detalle){
+      modalEnvioCard.classList.add(tipo === 'error' ? 'is-error' : 'is-success');
+      actualizarModalEnvio(etapa, detalle, 100);
+      modalCerrar.hidden = false;
+      if(tipo === 'success'){
+        await esperar(1200);
+        cerrarModalEnvio();
+      }
+    }
+
+    modalCerrar.addEventListener('click', cerrarModalEnvio);
 
     function poblarEstados(){
       ESTADOS_MX.forEach(e=>{
@@ -521,7 +889,7 @@
         const node=tpl.content.cloneNode(true);
         node.querySelector('tr').dataset.codigo=it.codigo||'';
         node.querySelector('tr').dataset.marca=it.marca||'';
-        node.querySelector('.producto').value=it.producto||'';
+        node.querySelector('.producto').textContent=it.producto||'';
         let pr=node.querySelector('.precio');
         let promoSel=node.querySelector('.promo');
         const key = claveItem(cadena, it);
@@ -621,7 +989,7 @@ async function cargarProductosDesdeSheets(){
       const items=[];
 
       for(const tr of filas){
-        const prod=tr.querySelector('.producto').value;
+        const prod=(tr.querySelector('.producto').value||'').trim();
         const marca=tr.dataset.marca||'';
         const promo=tr.querySelector('.promo').value || PROMOCIONES[0];
         const codigo=tr.dataset.codigo||'';
@@ -644,13 +1012,22 @@ async function cargarProductosDesdeSheets(){
         items
       };
 
-      const ok = navigator.sendBeacon(
-        ENDPOINT,
-        new Blob([JSON.stringify(payload)], { type: 'text/plain;charset=utf-8' })
-      );
+      setControlesEnvio(true);
+      abrirModalEnvio();
 
-      if(!ok){
-        try{
+      try{
+        await esperar(250);
+        actualizarModalEnvio('Enviando', 'Mandando información al servidor.', 45);
+
+        const ok = navigator.sendBeacon
+          ? navigator.sendBeacon(
+              ENDPOINT,
+              new Blob([JSON.stringify(payload)], { type: 'text/plain;charset=utf-8' })
+            )
+          : false;
+
+        if(!ok){
+          actualizarModalEnvio('Reintentando', 'La primera ruta no respondió. Intentando envío alterno.', 70);
           await fetch(ENDPOINT, {
             method: 'POST',
             mode: 'no-cors',
@@ -658,16 +1035,26 @@ async function cargarProductosDesdeSheets(){
             headers: { 'Content-Type': 'text/plain;charset=utf-8' },
             body: JSON.stringify(payload)
           });
-        }catch(err){
-          return mostrarMsg('error','No se pudo enviar (sin señal o bloqueado). Intenta de nuevo.');
+        }else{
+          actualizarModalEnvio('Solicitud enviada', 'El navegador aceptó el envío.', 78);
+          await esperar(300);
         }
+
+        actualizarModalEnvio('Finalizando', 'Limpiando formulario.', 92);
+        await esperar(250);
+        document.getElementById('formPrecios').reset();
+        poblarFamilias('');
+        limpiarTabla();
+        preciosMem.clear();
+        promosMem.clear();
+        mostrarMsg('success','Enviado con éxito ✅');
+        await finalizarModalEnvio('success', 'Enviado', 'Los precios fueron enviados.');
+      }catch(err){
+        mostrarMsg('error','No se pudo enviar (sin señal o bloqueado). Intenta de nuevo.');
+        await finalizarModalEnvio('error', 'Error de envío', 'No se pudo completar el envío. Intenta de nuevo.');
+      }finally{
+        setControlesEnvio(false);
       }
-      document.getElementById('formPrecios').reset();
-      poblarFamilias('');
-      limpiarTabla();
-      preciosMem.clear();
-      promosMem.clear();
-      mostrarMsg('success','Enviado con exito ✅');
     });
   </script>
 
