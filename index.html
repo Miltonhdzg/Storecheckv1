@@ -179,8 +179,30 @@
       transform: scale(1.05);
     }
 
+    .header-actions {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .btn-dashboard {
+      min-height: 40px;
+      padding: 0 14px;
+      border: 1px solid var(--primary);
+      border-radius: 10px;
+      background: rgba(79, 70, 229, 0.08);
+      color: var(--primary);
+      cursor: pointer;
+      font: inherit;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .btn-dashboard:hover { background: rgba(79, 70, 229, 0.16); }
+
     .sun-icon { display: none; width: 20px; height: 20px; }
     .moon-icon { display: block; width: 20px; height: 20px; }
+    .reload-icon { width: 19px; height: 19px; }
 
     [data-theme="dark"] .sun-icon { display: block; }
     [data-theme="dark"] .moon-icon { display: none; }
@@ -385,8 +407,70 @@
       background: var(--table-hover) !important;
     }
 
+    /* Family coding: a subtle row tint plus a left accent makes scanning easier. */
+    tbody tr.familia-panal-bebe {
+      --family-row: #eff6ff;
+      --family-row-hover: #dbeafe;
+      --family-accent: #2563eb;
+    }
+
+    tbody tr.familia-pull-up {
+      --family-row: #faf5ff;
+      --family-row-hover: #f3e8ff;
+      --family-accent: #9333ea;
+    }
+
+    tbody tr.familia-toalla-humeda {
+      --family-row: #f0fdfa;
+      --family-row-hover: #ccfbf1;
+      --family-accent: #0f766e;
+    }
+
+    tbody tr.familia-mascotas {
+      --family-row: #fffbeb;
+      --family-row-hover: #fef3c7;
+      --family-accent: #b45309;
+    }
+
+    tbody tr[class*="familia-"] {
+      background: var(--family-row) !important;
+      box-shadow: inset 4px 0 0 var(--family-accent);
+    }
+
+    tbody tr[class*="familia-"]:hover {
+      background: var(--family-row-hover) !important;
+    }
+
+    [data-theme="dark"] tbody tr.familia-panal-bebe {
+      --family-row: rgba(37, 99, 235, 0.16);
+      --family-row-hover: rgba(37, 99, 235, 0.26);
+      --family-accent: #60a5fa;
+    }
+
+    [data-theme="dark"] tbody tr.familia-pull-up {
+      --family-row: rgba(147, 51, 234, 0.16);
+      --family-row-hover: rgba(147, 51, 234, 0.26);
+      --family-accent: #c084fc;
+    }
+
+    [data-theme="dark"] tbody tr.familia-toalla-humeda {
+      --family-row: rgba(15, 118, 110, 0.18);
+      --family-row-hover: rgba(20, 184, 166, 0.26);
+      --family-accent: #5eead4;
+    }
+
+    [data-theme="dark"] tbody tr.familia-mascotas {
+      --family-row: rgba(180, 83, 9, 0.18);
+      --family-row-hover: rgba(245, 158, 11, 0.28);
+      --family-accent: #fbbf24;
+    }
+
     /* Highlighting captured item rows */
     tbody tr.row-filled {
+      box-shadow: inset 4px 0 0 var(--family-accent, var(--success)), inset -4px 0 0 var(--success);
+    }
+
+    tbody tr.row-filled:not([class*="familia-"]) {
       background: var(--row-filled) !important;
     }
 
@@ -640,6 +724,46 @@
       margin-top: 20px;
     }
 
+    .modal-input { margin-top: 16px; }
+    .modal-input label { margin-bottom: 6px; }
+    .modal-error { color: var(--error); font-size: 12px; font-weight: 600; margin: 10px 0 0; min-height: 18px; }
+
+    .dashboard-backdrop { align-items: start; overflow: auto; }
+    .dashboard-modal { width: min(1080px, 100%); margin: 20px auto; }
+    .dashboard-topbar, .dashboard-filters, .dashboard-heading { display: flex; align-items: center; gap: 12px; }
+    .dashboard-topbar, .dashboard-heading { justify-content: space-between; }
+    .dashboard-topbar { margin-bottom: 20px; }
+    .dashboard-topbar h2, .dashboard-heading h3 { margin: 0; }
+    .dashboard-filters { flex-wrap: wrap; padding: 14px; border: 1px solid var(--border); border-radius: 12px; background: var(--input-hover); }
+    .dashboard-filter { flex: 1 1 160px; }
+    .dashboard-filter label { font-size: 11px; margin-bottom: 4px; }
+    .dashboard-filter select { padding: 8px 10px; font-size: 13px; }
+    .dashboard-stats { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin: 16px 0; }
+    .dashboard-stat { padding: 16px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+    .dashboard-stat span { display: block; color: var(--muted); font-size: 11px; font-weight: 800; text-transform: uppercase; letter-spacing: .4px; }
+    .dashboard-stat strong { display: block; margin-top: 6px; color: var(--text); font-size: 26px; letter-spacing: -1px; }
+    .dashboard-stat.is-success strong { color: var(--success); }
+    .dashboard-stat.is-warning strong { color: var(--warning); }
+    .dashboard-progress { margin-bottom: 20px; }
+    .dashboard-progress .progress-track { height: 10px; }
+    .dashboard-progress-meta { display: flex; justify-content: space-between; margin-bottom: 7px; color: var(--muted); font-size: 12px; font-weight: 700; }
+    .dashboard-chart-card { margin-bottom: 20px; padding: 18px; border: 1px solid var(--border); border-radius: 12px; background: var(--card); }
+    .dashboard-chart-card h3 { margin: 0 0 18px; text-align: center; color: var(--text); font-size: 15px; }
+    .dashboard-chart { display: flex; flex-direction: column; gap: 12px; }
+    .dashboard-chart-row { display: grid; grid-template-columns: minmax(120px, 190px) 1fr 54px; gap: 10px; align-items: center; }
+    .dashboard-chart-label { overflow: hidden; color: var(--muted); font-size: 12px; font-weight: 700; text-align: right; text-overflow: ellipsis; white-space: nowrap; }
+    .dashboard-chart-track { height: 18px; overflow: hidden; border-radius: 3px; background: var(--progress-bg); }
+    .dashboard-chart-bar { height: 100%; min-width: 2px; border-radius: inherit; background: #17627f; transition: width .35s ease; }
+    [data-theme="dark"] .dashboard-chart-bar { background: #38bdf8; }
+    .dashboard-chart-value { color: var(--text); font-size: 12px; font-weight: 800; }
+    .dashboard-chart-empty { padding: 20px; color: var(--muted); font-size: 13px; text-align: center; }
+    .dashboard-table-wrapper { max-height: 430px; min-height: auto; }
+    .dashboard-table th:nth-child(1) { width: 20%; }
+    .dashboard-table th:nth-child(2) { width: 45%; }
+    .dashboard-table th:nth-child(3) { width: 15%; }
+    .dashboard-table th:nth-child(4) { width: 20%; }
+    .dashboard-empty { padding: 28px; text-align: center; color: var(--muted); font-size: 14px; }
+
     .modal.is-success .modal-status-icon {
       background: rgba(16, 185, 129, 0.1);
     }
@@ -722,6 +846,9 @@
         padding: 16px 16px 14px;
       }
       .app-header h1 { font-size: 20px; }
+      .header-content { align-items: flex-start; flex-wrap: wrap; }
+      .header-actions { width: 100%; justify-content: flex-end; gap: 8px; }
+      .btn-dashboard { padding: 0 10px; font-size: 12px; }
       
       form {
         padding: 16px;
@@ -781,6 +908,10 @@
 
       .modal-backdrop { padding: 14px; }
       .modal { padding: 20px; }
+      .dashboard-modal { margin: 0; }
+      .dashboard-stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .dashboard-chart-row { grid-template-columns: 90px 1fr 46px; gap: 7px; }
+      .dashboard-chart-label { font-size: 10px; }
     }
   </style>
 </head>
@@ -802,6 +933,14 @@
               <p>Elige Cadena y Estado. Coloca el precio OFERTA.</p>
             </div>
           </div>
+          <div class="header-actions">
+          <button type="button" id="btnDashboard" class="btn-dashboard">Supervisión semanal</button>
+          <button type="button" id="btnRecargar" class="btn-theme-toggle" aria-label="Recargar datos" title="Recargar datos">
+            <svg class="reload-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M20 11a8.1 8.1 0 1 0 2 5.3"></path>
+              <polyline points="20 4 20 11 13 11"></polyline>
+            </svg>
+          </button>
           <!-- Dark Mode Toggle Button -->
           <button type="button" id="btnThemeToggle" class="btn-theme-toggle" aria-label="Cambiar tema">
             <!-- Sun Icon (shown in dark mode) -->
@@ -821,6 +960,7 @@
               <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
             </svg>
           </button>
+          </div>
         </div>
       </header>
 
@@ -925,6 +1065,70 @@
     </div>
   </div>
 
+  <div class="modal-backdrop" id="modalAccesoDashboard" hidden aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="accesoDashboardTitulo">
+      <div class="modal-header">
+        <span class="modal-status-icon" aria-hidden="true"></span>
+        <div>
+          <h2 id="accesoDashboardTitulo">Acceso de supervisión</h2>
+          <p>Ingresa la contraseña para consultar el cumplimiento semanal.</p>
+        </div>
+      </div>
+      <div class="modal-input">
+        <label for="passwordDashboard">Contraseña</label>
+        <input id="passwordDashboard" type="password" autocomplete="current-password" />
+      </div>
+      <p class="modal-error" id="errorPasswordDashboard" aria-live="polite"></p>
+      <div class="modal-actions">
+        <button class="btn" type="button" id="btnCancelarDashboard">Cancelar</button>
+        <button class="btn btn-primary" type="button" id="btnAccederDashboard">Acceder</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal-backdrop dashboard-backdrop" id="modalDashboard" hidden aria-hidden="true">
+    <section class="modal dashboard-modal" role="dialog" aria-modal="true" aria-labelledby="dashboardTitulo">
+      <div class="dashboard-topbar">
+        <div>
+          <h2 id="dashboardTitulo">Supervisión semanal</h2>
+          <p>Avance de catálogo contra códigos capturados.</p>
+        </div>
+        <button class="btn" type="button" id="btnCerrarDashboard">Cerrar</button>
+      </div>
+
+      <div class="dashboard-filters">
+        <div class="dashboard-filter"><label for="dashboardSemana">Semana</label><select id="dashboardSemana"></select></div>
+        <div class="dashboard-filter"><label for="dashboardCadena">Cadena</label><select id="dashboardCadena"><option value="">Todas</option></select></div>
+        <div class="dashboard-filter"><label for="dashboardEstado">Estado</label><select id="dashboardEstado"><option value="">Todos</option></select></div>
+        <div class="dashboard-filter"><label for="dashboardFamilia">Familia</label><select id="dashboardFamilia"><option value="">Todas</option></select></div>
+      </div>
+
+      <div class="dashboard-stats">
+        <article class="dashboard-stat"><span>Esperadas</span><strong id="dashboardEsperadas">—</strong></article>
+        <article class="dashboard-stat is-success"><span>Capturadas</span><strong id="dashboardCapturadas">—</strong></article>
+        <article class="dashboard-stat is-success"><span>Cumplimiento</span><strong id="dashboardCumplimiento">—</strong></article>
+        <article class="dashboard-stat is-warning"><span>Faltantes</span><strong id="dashboardFaltantes">—</strong></article>
+      </div>
+      <div class="dashboard-progress">
+        <div class="dashboard-progress-meta"><span id="dashboardPeriodo">Selecciona una semana</span><span id="dashboardDetalle">—</span></div>
+        <div class="progress-track"><div class="progress-fill" id="dashboardBarra"></div></div>
+      </div>
+
+      <section class="dashboard-chart-card" aria-labelledby="dashboardGraficaTitulo">
+        <h3 id="dashboardGraficaTitulo">Avance por cadena (%)</h3>
+        <div class="dashboard-chart" id="dashboardGrafica"><div class="dashboard-chart-empty">Carga una semana para consultar el avance.</div></div>
+      </section>
+
+      <div class="dashboard-heading"><h3>Combinaciones pendientes</h3><span class="draft-status-indicator" id="dashboardStatus"></span></div>
+      <div class="tabla-wrapper dashboard-table-wrapper">
+        <table class="dashboard-table">
+          <thead><tr><th>Tienda</th><th>Producto</th><th>Código</th><th>Familia</th></tr></thead>
+          <tbody id="dashboardTabla"><tr><td colspan="4" class="dashboard-empty">Carga una semana para consultar los pendientes.</td></tr></tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
   <!-- === TEMPLATE DE FILA === -->
   <template id="tplFila">
     <tr>
@@ -934,7 +1138,8 @@
           <option value="Sin Oferta" selected>Sin Oferta</option>
           <option value="2x1">2x1</option>
           <option value="3x2">3x2</option>
-          <option value="5x3">5x3</option>          
+          <option value="5x3">5x3</option>
+          <option value="Oferta">Oferta</option>
         </select>
       </td>
       <td><input type="text" class="precio" placeholder="0.00" inputmode="decimal" /></td>
@@ -947,7 +1152,9 @@
       "Aguascalientes","Baja California","Baja California Sur","Campeche","Chiapas","Chihuahua","Ciudad de México","Coahuila","Colima","Durango","Estado de México","Guanajuato","Guerrero","Hidalgo","Jalisco","Michoacán","Morelos","Nayarit","Nuevo León","Oaxaca","Puebla","Querétaro","Quintana Roo","San Luis Potosí","Sinaloa","Sonora","Tabasco","Tamaulipas","Tlaxcala","Veracruz","Yucatán","Zacatecas"
     ];
 
-    const CATALOGO_URL = 'https://script.google.com/macros/s/AKfycbz0nlveTzDA5sAn9O6ToIit-T_maUhwAyoyhN-XsKeTKC5gLFFVeIghs00aGHMqcbyXKA/exec?action=catalogo';
+    const CATALOGO_URL = 'https://script.google.com/macros/s/AKfycbwagRj34n-2Tdg-YI4ZjvRjYAmwWmTi-c91-Z-RHMo7_aKViqVdcA4QJshhizCcdaw/exec?action=catalogo';
+    const CATALOGO_CACHE_KEY = 'storecheck_catalogo_cache_v1';
+    const CATALOGO_CACHE_TTL = 30 * 60 * 1000;
     let PRODUCTOS_POR_CADENA = {};
     const PROMOCIONES = ['Oferta', '2x1', '3x2', '5x3'];
     const LEGACY_CHAR_MAP = {
@@ -980,6 +1187,16 @@
         .toLocaleLowerCase('es-MX')
         .normalize('NFD')
         .replace(/[\u0300-\u036f]/g, '');
+    }
+
+    function claseFamilia(familia){
+      const clases = {
+        'panal bebe': 'familia-panal-bebe',
+        'pull up': 'familia-pull-up',
+        'toalla humeda': 'familia-toalla-humeda',
+        'mascotas': 'familia-mascotas'
+      };
+      return clases[claveCanonica(familia)] || '';
     }
 
     function preferirEtiqueta(actual, siguiente){
@@ -1296,6 +1513,8 @@
         const trNode = node.querySelector('tr');
         trNode.dataset.codigo=it.codigo||'';
         trNode.dataset.marca=it.marca||'';
+        const familiaClase = claseFamilia(it.segmento);
+        if(familiaClase) trNode.classList.add(familiaClase);
         node.querySelector('.producto').textContent=it.producto||'';
         
         let pr=node.querySelector('.precio');
@@ -1398,13 +1617,27 @@
     /* === CARGAR PRODUCTOS DESDE SHEET === */
     async function cargarProductosDesdeSheets(){
       try{
-        const res = await fetch(CATALOGO_URL, { cache: 'no-store' });
-        if(!res.ok) throw new Error('No se pudo leer el catalogo');
+        let rows = [];
+        let cacheValido = false;
+        try {
+          const cacheLocal = JSON.parse(localStorage.getItem(CATALOGO_CACHE_KEY) || 'null');
+          cacheValido = cacheLocal && Array.isArray(cacheLocal.rows) && (Date.now() - cacheLocal.savedAt) < CATALOGO_CACHE_TTL;
+          if(cacheValido) rows = cacheLocal.rows;
+        } catch(cacheError) {
+          localStorage.removeItem(CATALOGO_CACHE_KEY);
+        }
 
-        const json = await res.json();
-        if(!json.ok) throw new Error(json.error || 'Respuesta invalida del catalogo');
+        if(!cacheValido){
+          const res = await fetch(CATALOGO_URL, { cache: 'no-store' });
+          if(!res.ok) throw new Error('No se pudo leer el catalogo');
+          const json = await res.json();
+          if(!json.ok) throw new Error(json.error || 'Respuesta invalida del catalogo');
+          rows = Array.isArray(json.rows) ? json.rows : [];
+          try {
+            localStorage.setItem(CATALOGO_CACHE_KEY, JSON.stringify({ savedAt: Date.now(), rows }));
+          } catch(cacheError) {}
+        }
 
-        const rows = Array.isArray(json.rows) ? json.rows : [];
         PRODUCTOS_POR_CADENA = {};
 
         for (const item of rows) {
@@ -1455,11 +1688,19 @@
       }
     }
 
-    const ENDPOINT = "https://script.google.com/macros/s/AKfycbz0nlveTzDA5sAn9O6ToIit-T_maUhwAyoyhN-XsKeTKC5gLFFVeIghs00aGHMqcbyXKA/exec";
+    const ENDPOINT = "https://script.google.com/macros/s/AKfycbwagRj34n-2Tdg-YI4ZjvRjYAmwWmTi-c91-Z-RHMo7_aKViqVdcA4QJshhizCcdaw/exec";
     const API_TOKEN = "10152021"; // el mismo del Apps Script
+    const DASHBOARD_PASSWORD = 'supervisor2026'; // Cambia esta contraseña antes de publicar.
+    const DASHBOARD_SESSION_KEY = 'storecheck_dashboard_access';
+    const DASHBOARD_START_WEEK = '2026-W20';
+
+    document.getElementById('btnRecargar').addEventListener('click', () => {
+      localStorage.removeItem(CATALOGO_CACHE_KEY);
+      window.location.reload();
+    });
 
     poblarEstados();
-    cargarProductosDesdeSheets();
+    const catalogoCargaPromise = cargarProductosDesdeSheets();
 
     // === SISTEMA DE TEMAS ===
     const btnThemeToggle = document.getElementById('btnThemeToggle');
@@ -1485,6 +1726,245 @@
     });
 
     inicializarTema();
+
+    /* === DASHBOARD SEMANAL === */
+    const btnDashboard = document.getElementById('btnDashboard');
+    const modalAccesoDashboard = document.getElementById('modalAccesoDashboard');
+    const modalDashboard = document.getElementById('modalDashboard');
+    const passwordDashboard = document.getElementById('passwordDashboard');
+    const errorPasswordDashboard = document.getElementById('errorPasswordDashboard');
+    const dashboardSemana = document.getElementById('dashboardSemana');
+    const dashboardCadena = document.getElementById('dashboardCadena');
+    const dashboardEstado = document.getElementById('dashboardEstado');
+    const dashboardFamilia = document.getElementById('dashboardFamilia');
+    const dashboardTabla = document.getElementById('dashboardTabla');
+    const dashboardGrafica = document.getElementById('dashboardGrafica');
+    const dashboardSemanasCache = new Map();
+    let dashboardDatosSemana = null;
+    let dashboardRequestId = 0;
+
+    function semanaISO(fecha){
+      const d = new Date(Date.UTC(fecha.getFullYear(), fecha.getMonth(), fecha.getDate()));
+      const dia = d.getUTCDay() || 7;
+      d.setUTCDate(d.getUTCDate() + 4 - dia);
+      const inicio = new Date(Date.UTC(d.getUTCFullYear(), 0, 1));
+      const semana = Math.ceil((((d - inicio) / 86400000) + 1) / 7);
+      return `${d.getUTCFullYear()}-W${String(semana).padStart(2, '0')}`;
+    }
+
+    function fechaInicioSemana(weekKey){
+      const [year, week] = weekKey.split('-W').map(Number);
+      // Mediodía UTC evita que la fecha cambie al domingo anterior en zonas horarias de América.
+      const jan4 = new Date(Date.UTC(year, 0, 4, 12));
+      const offset = (jan4.getUTCDay() || 7) - 1;
+      const monday = new Date(jan4);
+      monday.setUTCDate(jan4.getUTCDate() - offset + ((week - 1) * 7));
+      return monday;
+    }
+
+    function etiquetaSemana(weekKey){
+      const inicio = fechaInicioSemana(weekKey);
+      const fin = new Date(inicio);
+      fin.setUTCDate(inicio.getUTCDate() + 6);
+      const formato = new Intl.DateTimeFormat('es-MX', { day: 'numeric', month: 'short', timeZone: 'UTC' });
+      return `Semana ${Number(weekKey.slice(-2))} · ${formato.format(inicio)}–${formato.format(fin)} ${weekKey.slice(0,4)}`;
+    }
+
+    function poblarSemanasDashboard(){
+      if(dashboardSemana.options.length) return;
+      const inicio = fechaInicioSemana(DASHBOARD_START_WEEK);
+      const hoy = fechaInicioSemana(semanaISO(new Date()));
+      for(let fecha = new Date(inicio); fecha <= hoy; fecha.setUTCDate(fecha.getUTCDate() + 7)){
+        const clave = semanaISO(fecha);
+        const option = document.createElement('option');
+        option.value = clave;
+        option.textContent = etiquetaSemana(clave);
+        dashboardSemana.appendChild(option);
+      }
+      const ultimaSemana = new Date(hoy);
+      ultimaSemana.setUTCDate(ultimaSemana.getUTCDate() - 7);
+      const semanaDefault = semanaISO(ultimaSemana);
+      dashboardSemana.value = semanaDefault >= DASHBOARD_START_WEEK ? semanaDefault : DASHBOARD_START_WEEK;
+    }
+
+    function poblarFiltrosDashboard(){
+      const cadenas = Object.keys(PRODUCTOS_POR_CADENA).sort((a,b) => a.localeCompare(b));
+      const familias = new Set();
+      cadenas.forEach(cadena => (PRODUCTOS_POR_CADENA[cadena] || []).forEach(item => { if(item.segmento) familias.add(item.segmento); }));
+      dashboardCadena.innerHTML = '<option value="">Todas</option>';
+      cadenas.forEach(valor => dashboardCadena.add(new Option(valor, valor)));
+      dashboardEstado.innerHTML = '<option value="">Todos</option>';
+      ESTADOS_MX.forEach(valor => dashboardEstado.add(new Option(valor, valor)));
+      dashboardFamilia.innerHTML = '<option value="">Todas</option>';
+      [...familias].sort((a,b) => a.localeCompare(b)).forEach(valor => dashboardFamilia.add(new Option(valor, valor)));
+    }
+
+    function escaparHtml(valor){
+      return String(valor ?? '').replace(/[&<>'"]/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', "'":'&#39;', '"':'&quot;' })[char]);
+    }
+
+    function renderizarGraficaAvance(datos){
+      const porCadena = new Map();
+      const obtener = cadena => {
+        if(!porCadena.has(cadena)) porCadena.set(cadena, { cadena, esperadas: 0, capturadas: 0 });
+        return porCadena.get(cadena);
+      };
+
+      datos.faltantes.forEach(item => { obtener(item.cadena).esperadas++; });
+      datos.capturas.forEach(item => {
+        const fila = obtener(item.cadena);
+        fila.esperadas++;
+        fila.capturadas++;
+      });
+
+      const filas = [...porCadena.values()]
+        .map(item => ({ ...item, porcentaje: item.esperadas ? Math.round((item.capturadas / item.esperadas) * 1000) / 10 : 0 }))
+        .sort((a,b) => b.porcentaje - a.porcentaje || a.cadena.localeCompare(b.cadena));
+
+      dashboardGrafica.innerHTML = filas.length
+        ? filas.map(item => `<div class="dashboard-chart-row"><span class="dashboard-chart-label" title="${escaparHtml(item.cadena)}">${escaparHtml(item.cadena)}</span><div class="dashboard-chart-track" role="progressbar" aria-label="Avance de ${escaparHtml(item.cadena)}" aria-valuemin="0" aria-valuemax="100" aria-valuenow="${item.porcentaje}"><div class="dashboard-chart-bar" style="width:${Math.min(100, item.porcentaje)}%"></div></div><span class="dashboard-chart-value">${item.porcentaje}%</span></div>`).join('')
+        : '<div class="dashboard-chart-empty">No hay cadenas disponibles con estos filtros.</div>';
+    }
+
+    function aplicarFiltrosDashboard(datos){
+      const cadenaFiltro = dashboardCadena.value;
+      const estadoFiltro = dashboardEstado.value;
+      const familiaFiltro = claveCanonica(dashboardFamilia.value);
+      const esperadasMap = new Map();
+
+      Object.entries(PRODUCTOS_POR_CADENA).forEach(([cadena, items]) => {
+        if(cadenaFiltro && cadena !== cadenaFiltro) return;
+        items.forEach(item => {
+          if(familiaFiltro && claveCanonica(item.segmento) !== familiaFiltro) return;
+          const codigo = limpiarTexto(item.codigo);
+          if(!codigo) return;
+          const clave = `${cadena}::${codigo}`;
+          if(!esperadasMap.has(clave)) esperadasMap.set(clave, {
+            cadena, codigo, producto: item.producto, familia: item.segmento
+          });
+        });
+      });
+
+      const capturasMap = new Map();
+      (datos.capturas || []).forEach(item => {
+        if(cadenaFiltro && item.cadena !== cadenaFiltro) return;
+        if(estadoFiltro && item.estado !== estadoFiltro) return;
+        const clave = `${item.cadena}::${item.codigo}`;
+        if(!esperadasMap.has(clave)) return;
+        const anterior = capturasMap.get(clave);
+        if(!anterior || item.fecha > anterior.fecha) capturasMap.set(clave, item);
+      });
+
+      const esperadas = [...esperadasMap.entries()];
+      const capturadas = esperadas.filter(([clave]) => capturasMap.has(clave)).map(([,item]) => item);
+      const faltantes = esperadas.filter(([clave]) => !capturasMap.has(clave)).map(([,item]) => item);
+      const cumplimiento = esperadas.length ? Math.round((capturadas.length / esperadas.length) * 1000) / 10 : 0;
+
+      document.getElementById('dashboardEsperadas').textContent = esperadas.length;
+      document.getElementById('dashboardCapturadas').textContent = capturadas.length;
+      document.getElementById('dashboardCumplimiento').textContent = `${cumplimiento}%`;
+      document.getElementById('dashboardFaltantes').textContent = faltantes.length;
+      document.getElementById('dashboardPeriodo').textContent = etiquetaSemana(datos.semana);
+      document.getElementById('dashboardDetalle').textContent = `${capturadas.length} de ${esperadas.length} combinaciones`;
+      document.getElementById('dashboardBarra').style.width = `${Math.min(100, cumplimiento)}%`;
+      document.getElementById('dashboardStatus').textContent = faltantes.length ? `${faltantes.length} pendientes` : 'Completo';
+      renderizarGraficaAvance({ faltantes, capturas: capturadas });
+      dashboardTabla.innerHTML = faltantes.length
+        ? faltantes.map(item => `<tr><td>${escaparHtml(item.cadena)}</td><td><div class="producto">${escaparHtml(item.producto)}</div></td><td>${escaparHtml(item.codigo)}</td><td>${escaparHtml(item.familia)}</td></tr>`).join('')
+        : '<tr><td colspan="4" class="dashboard-empty">No hay combinaciones pendientes con estos filtros.</td></tr>';
+    }
+
+    function mostrarEstadoDashboard(mensaje){
+      document.getElementById('dashboardEsperadas').textContent = '—';
+      document.getElementById('dashboardCapturadas').textContent = '—';
+      document.getElementById('dashboardCumplimiento').textContent = '—';
+      document.getElementById('dashboardFaltantes').textContent = '—';
+      document.getElementById('dashboardPeriodo').textContent = mensaje;
+      document.getElementById('dashboardDetalle').textContent = '';
+      document.getElementById('dashboardBarra').style.width = '0%';
+      dashboardGrafica.innerHTML = `<div class="dashboard-chart-empty">${escaparHtml(mensaje)}</div>`;
+      dashboardTabla.innerHTML = `<tr><td colspan="4" class="dashboard-empty">${escaparHtml(mensaje)}</td></tr>`;
+    }
+
+    async function cargarDashboard(){
+      const semana = dashboardSemana.value;
+      const requestId = ++dashboardRequestId;
+      if(dashboardSemanasCache.has(semana)){
+        dashboardDatosSemana = dashboardSemanasCache.get(semana);
+        aplicarFiltrosDashboard(dashboardDatosSemana);
+        return;
+      }
+
+      mostrarEstadoDashboard('Cargando cumplimiento semanal…');
+      document.getElementById('dashboardStatus').textContent = '';
+      const params = new URLSearchParams({ action: 'dashboardSemanal', week: semana });
+      try {
+        const res = await fetch(`${ENDPOINT}?${params}`, { cache: 'no-store' });
+        const respuesta = await res.text();
+        let datos;
+        try {
+          datos = JSON.parse(respuesta);
+        } catch(parseError) {
+          if(respuesta.trim() === 'OK') {
+            throw new Error('El Apps Script publicado aún no incluye el dashboard. Actualiza la implementación del Web App.');
+          }
+          throw new Error('El servidor devolvió una respuesta que el dashboard no puede leer.');
+        }
+        if(!res.ok || !datos.ok) throw new Error(datos.error || 'No se pudo consultar el dashboard');
+        if(datos.version !== 'dashboard-v3') throw new Error('La versión publicada del dashboard no está actualizada. Debe ser dashboard-v3.');
+        dashboardSemanasCache.set(semana, datos);
+        if(requestId !== dashboardRequestId) return;
+        dashboardDatosSemana = datos;
+        aplicarFiltrosDashboard(datos);
+      } catch(err) {
+        if(requestId !== dashboardRequestId) return;
+        console.error('Error en dashboard:', err);
+        mostrarEstadoDashboard(err.message || 'No se pudo cargar el dashboard.');
+      }
+    }
+
+    async function abrirDashboard(){
+      modalDashboard.hidden = false;
+      modalDashboard.setAttribute('aria-hidden', 'false');
+      document.body.classList.add('modal-open');
+      poblarSemanasDashboard();
+      mostrarEstadoDashboard('Cargando catálogo y filtros…');
+      await catalogoCargaPromise;
+      poblarFiltrosDashboard();
+      await cargarDashboard();
+    }
+
+    function cerrarDashboard(){
+      modalDashboard.hidden = true;
+      modalDashboard.setAttribute('aria-hidden', 'true');
+      document.body.classList.remove('modal-open');
+    }
+
+    btnDashboard.addEventListener('click', () => {
+      if(sessionStorage.getItem(DASHBOARD_SESSION_KEY) === 'true') return abrirDashboard();
+      modalAccesoDashboard.hidden = false;
+      modalAccesoDashboard.setAttribute('aria-hidden', 'false');
+      passwordDashboard.value = '';
+      errorPasswordDashboard.textContent = '';
+      setTimeout(() => passwordDashboard.focus(), 0);
+    });
+    document.getElementById('btnCancelarDashboard').addEventListener('click', () => { modalAccesoDashboard.hidden = true; });
+    document.getElementById('btnAccederDashboard').addEventListener('click', () => {
+      if(passwordDashboard.value !== DASHBOARD_PASSWORD){
+        errorPasswordDashboard.textContent = 'Contraseña incorrecta.';
+        passwordDashboard.focus();
+        return;
+      }
+      sessionStorage.setItem(DASHBOARD_SESSION_KEY, 'true');
+      modalAccesoDashboard.hidden = true;
+      abrirDashboard();
+    });
+    passwordDashboard.addEventListener('keydown', event => { if(event.key === 'Enter') document.getElementById('btnAccederDashboard').click(); });
+    document.getElementById('btnCerrarDashboard').addEventListener('click', cerrarDashboard);
+    dashboardSemana.addEventListener('change', cargarDashboard);
+    [dashboardCadena, dashboardEstado, dashboardFamilia].forEach(control => control.addEventListener('change', () => {
+      if(dashboardDatosSemana) aplicarFiltrosDashboard(dashboardDatosSemana);
+    }));
 
     /* === ENVÍO === */
     document.getElementById('formPrecios').addEventListener('submit', async e=>{
