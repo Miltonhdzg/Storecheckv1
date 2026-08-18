@@ -9,30 +9,29 @@ function doGet(e) {
   try {
     const action = (e && e.parameter && e.parameter.action) ? String(e.parameter.action).trim() : "";
 
-    if (action === "catalogo") {
+    if (action === "cadenas") {
       const ss = SpreadsheetApp.getActiveSpreadsheet();
       const sh = ss.getSheetByName(CATALOGO_SHEET_NAME);
       if (!sh) {
         return json_({ ok: false, error: `No existe pestaña ${CATALOGO_SHEET_NAME}` });
       }
 
-      const values = sh.getDataRange().getDisplayValues();
-      if (!values || values.length < 2) {
-        return json_({ ok: true, rows: [] });
+      return json_({ ok: true, cadenas: obtenerCadenasCatalogo_(sh) });
+    }
+
+    if (action === "catalogo" || action === "catalogoCompleto") {
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sh = ss.getSheetByName(CATALOGO_SHEET_NAME);
+      if (!sh) {
+        return json_({ ok: false, error: `No existe pestaña ${CATALOGO_SHEET_NAME}` });
       }
 
-      const headers = values[0].map(h => String(h).trim());
-      const rows = values.slice(1).filter(r => r.some(c => String(c).trim() !== ""));
+      const cadena = action === "catalogo" ? texto_(e.parameter.cadena) : "";
+      if (action === "catalogo" && !cadena) {
+        return json_({ ok: false, error: "Selecciona una cadena" });
+      }
 
-      const data = rows.map(r => {
-        const obj = {};
-        headers.forEach((h, i) => {
-          obj[h] = (r[i] || "").toString().trim();
-        });
-        return obj;
-      });
-
-      return json_({ ok: true, rows: data });
+      return json_({ ok: true, cadena, rows: obtenerFilasCatalogo_(sh, cadena) });
     }
 
     if (action === "dashboardSemanal") {
@@ -101,6 +100,63 @@ function json_(obj) {
   return ContentService
     .createTextOutput(JSON.stringify(obj))
     .setMimeType(ContentService.MimeType.JSON);
+}
+
+function obtenerEncabezadosCatalogo_(sheet) {
+  const lastColumn = sheet.getLastColumn();
+  if (!lastColumn || !sheet.getLastRow()) return { headers: [], cadenaIndex: -1 };
+  const headers = sheet.getRange(1, 1, 1, lastColumn).getDisplayValues()[0].map(texto_);
+  const cadenaIndex = headers.findIndex(h => normalizarEncabezado_(h) === "cadena");
+  return { headers, cadenaIndex };
+}
+
+function obtenerCadenasCatalogo_(sheet) {
+  const lastRow = sheet.getLastRow();
+  const meta = obtenerEncabezadosCatalogo_(sheet);
+  if (lastRow < 2 || meta.cadenaIndex < 0) return [];
+
+  const values = sheet.getRange(2, meta.cadenaIndex + 1, lastRow - 1, 1).getDisplayValues();
+  return [...new Set(values.map(r => texto_(r[0])).filter(Boolean))]
+    .sort((a, b) => a.localeCompare(b));
+}
+
+function obtenerFilasCatalogo_(sheet, cadena) {
+  const lastRow = sheet.getLastRow();
+  const lastColumn = sheet.getLastColumn();
+  const meta = obtenerEncabezadosCatalogo_(sheet);
+  if (lastRow < 2 || !lastColumn || meta.cadenaIndex < 0) return [];
+
+  let rows = [];
+  if (!cadena) {
+    rows = sheet.getRange(2, 1, lastRow - 1, lastColumn).getDisplayValues();
+  } else {
+    // Primero se lee solamente la columna Cadena. Después se consultan las filas
+    // coincidentes en bloques contiguos para no transportar el catálogo completo.
+    const cadenas = sheet.getRange(2, meta.cadenaIndex + 1, lastRow - 1, 1).getDisplayValues();
+    const indices = [];
+    cadenas.forEach((r, i) => {
+      if (texto_(r[0]) === cadena) indices.push(i);
+    });
+
+    for (let i = 0; i < indices.length;) {
+      const inicio = indices[i];
+      let fin = inicio;
+      while (i + 1 < indices.length && indices[i + 1] === fin + 1) {
+        i++;
+        fin = indices[i];
+      }
+      rows = rows.concat(sheet.getRange(2 + inicio, 1, fin - inicio + 1, lastColumn).getDisplayValues());
+      i++;
+    }
+  }
+
+  return rows
+    .filter(r => r.some(c => texto_(c)))
+    .map(r => {
+      const obj = {};
+      meta.headers.forEach((h, i) => obj[h] = texto_(r[i]));
+      return obj;
+    });
 }
 
 function obtenerDashboardSemanal_(params) {
