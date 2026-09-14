@@ -519,20 +519,24 @@
       border-bottom-color: var(--row-filled-border);
     }
 
-    tbody tr.row-filled .precio {
+    tbody tr.row-filled .precio-regular,
+    tbody tr.row-filled .precio-promocion {
       border-color: var(--success);
       box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.08);
       font-weight: 700;
     }
 
     #tablaProductos th:nth-child(1),
-    #tablaProductos td:nth-child(1) { width: 50% }
+    #tablaProductos td:nth-child(1) { width: 36% }
 
     #tablaProductos th:nth-child(2),
-    #tablaProductos td:nth-child(2) { width: 28% }
+    #tablaProductos td:nth-child(2) { width: 20% }
 
     #tablaProductos th:nth-child(3),
     #tablaProductos td:nth-child(3) { width: 22% }
+
+    #tablaProductos th:nth-child(4),
+    #tablaProductos td:nth-child(4) { width: 22% }
 
     #tablaProductos .producto {
       font-size: 14px;
@@ -555,7 +559,9 @@
       border-radius: 8px;
     }
 
-    .precio {
+    .precio,
+    .precio-regular,
+    .precio-promocion {
       padding: 6px 10px;
       font-size: 14px;
       text-align: right;
@@ -919,13 +925,16 @@
       }
 
       #tablaProductos th:nth-child(1),
-      #tablaProductos td:nth-child(1) { width: 45% }
+      #tablaProductos td:nth-child(1) { width: 34% }
 
       #tablaProductos th:nth-child(2),
-      #tablaProductos td:nth-child(2) { width: 30% }
+      #tablaProductos td:nth-child(2) { width: 22% }
 
       #tablaProductos th:nth-child(3),
-      #tablaProductos td:nth-child(3) { width: 25% }
+      #tablaProductos td:nth-child(3) { width: 22% }
+
+      #tablaProductos th:nth-child(4),
+      #tablaProductos td:nth-child(4) { width: 22% }
 
       #tablaProductos .producto {
         font-size: 13px;
@@ -1056,7 +1065,7 @@
           </div>
 
           <div class="hint" style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 8px;">
-            <span>Lista por Cadena. Columnas: <b>Producto</b>, <b>Promoción</b> y <b>Precio</b> (2 decimales).</span>
+            <span>Captura el <b>precio regular</b>. El precio del paquete se calcula automáticamente; en <b>Oferta</b> se captura manualmente.</span>
             <span id="draftStatus" class="draft-status-indicator"></span>
           </div>
 
@@ -1064,9 +1073,10 @@
             <table id="tablaProductos">
               <thead>
                 <tr>
-                  <th style="width:50%;">Producto</th>
-                  <th style="width:28%;">Promoción</th>
-                  <th style="width:22%;">Precio</th>
+                  <th>Producto</th>
+                  <th>Precio regular</th>
+                  <th>Promoción</th>
+                  <th>Precio paquete/oferta</th>
                 </tr>
               </thead>
               <tbody></tbody>
@@ -1186,6 +1196,7 @@
   <template id="tplFila">
     <tr>
       <td><div class="producto" aria-hidden="false"></div></td>
+      <td><input type="text" class="precio-regular" placeholder="0.00" inputmode="decimal" /></td>
       <td>
         <select class="promo">
           <option value="Sin Oferta" selected>Sin Oferta</option>
@@ -1193,10 +1204,9 @@
           <option value="3x2">3x2</option>
           <option value="5x3">5x3</option>
           <option value="Oferta">Oferta</option>
-          <option value="Precio Regular">Precio Regular</option>
         </select>
       </td>
-      <td><input type="text" class="precio" placeholder="0.00" inputmode="decimal" /></td>
+      <td><input type="text" class="precio-promocion" placeholder="0.00" inputmode="decimal" readonly /></td>
     </tr>
   </template>
 
@@ -1216,7 +1226,7 @@
     let catalogoCompletoCargado = false;
     let catalogoExpiraEn = 0;
     let offlineDbPromise = null;
-    const PROMOCIONES = ['Oferta', '2x1', '3x2', '5x3'];
+    const PROMOCIONES = ['Sin Oferta', 'Oferta', '2x1', '3x2', '5x3'];
     const LEGACY_CHAR_MAP = {
       0x87: 'á',
       0x8E: 'é',
@@ -1314,6 +1324,15 @@
       const n = Number(num);
       if(!isFinite(n)) return '';
       return n.toFixed(2);
+    }
+
+    function calcularPrecioPaquete(precioRegular, promocion){
+      const precio = Number(precioRegular);
+      if(!isFinite(precio) || precio < 0) return '';
+      if(promocion === 'Sin Oferta') return formateaDinero(precio);
+      const match = String(promocion || '').match(/^(\d+)x(\d+)$/i);
+      if(!match) return '';
+      return formateaDinero(precio * Number(match[2]));
     }
 
     function decodificarTextoMixto(buffer){
@@ -1482,15 +1501,23 @@
     let controlesBloqueados = false;
     
     // Memory Maps for temporary input storage
-    const preciosMem = new Map();
+    const preciosRegularesMem = new Map();
+    const preciosPromocionMem = new Map();
     const promosMem = new Map();
 
     // Restoring maps from localStorage
-    const localPrecios = localStorage.getItem('storecheck_precios');
-    if(localPrecios) {
+    const localPreciosRegulares = localStorage.getItem('storecheck_precios_regulares');
+    if(localPreciosRegulares) {
       try {
-        const arr = JSON.parse(localPrecios);
-        arr.forEach(([k, v]) => preciosMem.set(k, v));
+        const arr = JSON.parse(localPreciosRegulares);
+        arr.forEach(([k, v]) => preciosRegularesMem.set(k, v));
+      } catch(e) {}
+    }
+    const localPreciosPromocion = localStorage.getItem('storecheck_precios_promocion') || localStorage.getItem('storecheck_precios');
+    if(localPreciosPromocion) {
+      try {
+        const arr = JSON.parse(localPreciosPromocion);
+        arr.forEach(([k, v]) => preciosPromocionMem.set(k, v));
       } catch(e) {}
     }
     const localPromos = localStorage.getItem('storecheck_promos');
@@ -1631,7 +1658,7 @@
       let capturados = 0;
 
       filas.forEach(tr => {
-        const prInput = tr.querySelector('.precio');
+        const prInput = tr.querySelector('.precio-regular');
         const hasPrice = prInput && prInput.value.trim().length > 0;
         if(hasPrice) {
           tr.classList.add('row-filled');
@@ -1670,33 +1697,53 @@
         if(familiaClase) trNode.classList.add(familiaClase);
         node.querySelector('.producto').textContent=it.producto||'';
         
-        let pr=node.querySelector('.precio');
+        const precioRegularInput=node.querySelector('.precio-regular');
+        const precioPromocionInput=node.querySelector('.precio-promocion');
         let promoSel=node.querySelector('.promo');
         const key = claveItem(cadena, it);
-        
-        if(preciosMem.has(key)) {
-          pr.value = preciosMem.get(key);
-        }
-        
+
+        precioRegularInput.value = preciosRegularesMem.get(key) || '';
         promoSel.value = promosMem.get(key) || PROMOCIONES[0];
-        
-        pr.addEventListener('input',e=>{
+
+        function actualizarPrecioPromocion(){
+          const promo = promoSel.value || PROMOCIONES[0];
+          if(promo === 'Oferta'){
+            precioPromocionInput.readOnly = false;
+            precioPromocionInput.placeholder = 'Precio de oferta';
+            precioPromocionInput.value = preciosPromocionMem.get(key) || '';
+          }else{
+            precioPromocionInput.readOnly = true;
+            precioPromocionInput.placeholder = 'Calculado';
+            precioPromocionInput.value = calcularPrecioPaquete(precioRegularInput.value, promo);
+          }
+        }
+
+        precioRegularInput.addEventListener('input',e=>{
           const v = normalizarPrecio(e.target.value);
           e.target.value = v;
           if(v) {
-            preciosMem.set(key, v);
+            preciosRegularesMem.set(key, v);
           } else {
-            preciosMem.delete(key);
+            preciosRegularesMem.delete(key);
           }
-          localStorage.setItem('storecheck_precios', JSON.stringify([...preciosMem]));
+          localStorage.setItem('storecheck_precios_regulares', JSON.stringify([...preciosRegularesMem]));
+          actualizarPrecioPromocion();
           actualizarProgresoCaptura();
         });
 
-        // Fast keyboard navigation between price inputs
-        pr.addEventListener('keydown', e => {
+        precioPromocionInput.addEventListener('input',e=>{
+          const v = normalizarPrecio(e.target.value);
+          e.target.value = v;
+          if(v) preciosPromocionMem.set(key, v);
+          else preciosPromocionMem.delete(key);
+          localStorage.setItem('storecheck_precios_promocion', JSON.stringify([...preciosPromocionMem]));
+        });
+
+        // Fast keyboard navigation between regular price inputs
+        precioRegularInput.addEventListener('keydown', e => {
           if (e.key === 'Enter' || e.key === 'ArrowDown') {
             e.preventDefault();
-            const inputs = [...tablaBody.querySelectorAll('.precio')];
+            const inputs = [...tablaBody.querySelectorAll('.precio-regular')];
             const idx = inputs.indexOf(e.target);
             if (idx !== -1 && idx < inputs.length - 1) {
               inputs[idx + 1].focus();
@@ -1704,7 +1751,7 @@
             }
           } else if (e.key === 'ArrowUp') {
             e.preventDefault();
-            const inputs = [...tablaBody.querySelectorAll('.precio')];
+            const inputs = [...tablaBody.querySelectorAll('.precio-regular')];
             const idx = inputs.indexOf(e.target);
             if (idx !== -1 && idx > 0) {
               inputs[idx - 1].focus();
@@ -1713,14 +1760,18 @@
           }
         });
 
-        pr.addEventListener('focus', e => {
+        precioRegularInput.addEventListener('focus', e => {
           e.target.select();
         });
+        precioPromocionInput.addEventListener('focus', e => e.target.select());
         
         promoSel.addEventListener('change', e=>{
           promosMem.set(key, e.target.value || PROMOCIONES[0]);
           localStorage.setItem('storecheck_promos', JSON.stringify([...promosMem]));
+          actualizarPrecioPromocion();
         });
+
+        actualizarPrecioPromocion();
         
         tablaBody.appendChild(node);
       });
@@ -1764,7 +1815,7 @@
     });
 
     btnLimpiar.addEventListener('click',()=>{
-      if (preciosMem.size > 0 || selCadena.value || selEstado.value) {
+      if (preciosRegularesMem.size > 0 || preciosPromocionMem.size > 0 || selCadena.value || selEstado.value) {
         if (!confirm('¿Estás seguro de que deseas limpiar todo el formulario y borrar los datos guardados?')) {
           return;
         }
@@ -1774,9 +1825,12 @@
       selFamilia.disabled = true;
       productosSection.hidden = true;
       limpiarTabla();
-      preciosMem.clear();
+      preciosRegularesMem.clear();
+      preciosPromocionMem.clear();
       promosMem.clear();
       localStorage.removeItem('storecheck_precios');
+      localStorage.removeItem('storecheck_precios_regulares');
+      localStorage.removeItem('storecheck_precios_promocion');
       localStorage.removeItem('storecheck_promos');
       localStorage.removeItem('storecheck_cadena');
       localStorage.removeItem('storecheck_estado');
@@ -2203,9 +2257,12 @@
       selFamilia.disabled = true;
       productosSection.hidden = true;
       limpiarTabla();
-      preciosMem.clear();
+      preciosRegularesMem.clear();
+      preciosPromocionMem.clear();
       promosMem.clear();
       localStorage.removeItem('storecheck_precios');
+      localStorage.removeItem('storecheck_precios_regulares');
+      localStorage.removeItem('storecheck_precios_promocion');
       localStorage.removeItem('storecheck_promos');
       localStorage.removeItem('storecheck_cadena');
       localStorage.removeItem('storecheck_estado');
@@ -2235,14 +2292,19 @@
         const marca=tr.dataset.marca||'';
         const promo=tr.querySelector('.promo').value || PROMOCIONES[0];
         const codigo=tr.dataset.codigo||'';
-        let pr=normalizarPrecio(tr.querySelector('.precio').value.trim());
-        if(!pr) continue;
+        let precioRegular=normalizarPrecio(tr.querySelector('.precio-regular').value.trim());
+        if(!precioRegular) continue;
+        precioRegular=formateaDinero(precioRegular);
+        let pr=normalizarPrecio(tr.querySelector('.precio-promocion').value.trim());
+        if(promo === 'Oferta' && !pr)
+          return mostrarMsg('error',`Captura el precio de oferta de ${producto}.`);
+        if(!pr) pr=calcularPrecioPaquete(precioRegular, promo);
         pr=formateaDinero(pr);
-        items.push({prod:producto,producto,marca,promo,codigo,pr});
+        items.push({prod:producto,producto,marca,promo,codigo,precioRegular,precioPromocion:pr,pr});
       }
 
       if(items.length===0)
-        return mostrarMsg('error','Agrega al menos un precio.');
+        return mostrarMsg('error','Agrega al menos un precio regular.');
 
       const familia = selFamilia.value || '';
 

@@ -82,7 +82,8 @@ function doPost(e) {
       it.codigo || "",
       it.prod || "",
       it.marca || "",
-      it.pr || "",
+      it.precioRegular || "",
+      it.pr || it.precioPromocion || "",
       it.promo || "",
     ]));
 
@@ -221,15 +222,16 @@ function obtenerColumnasCaptura_(primeraFila, tieneEncabezados) {
     codigo: indice({ aliases: ["Codigo Producto", "Código Producto", "Codigo"], fallback: 4 }),
     producto: indice({ aliases: ["Producto"], fallback: 5 }),
     marca: indice({ aliases: ["Marca"], fallback: 6 }),
-    precio: indice({ aliases: ["Precio"], fallback: 7 }),
-    promocion: indice({ aliases: ["Promoción", "Promocion"], fallback: 8 })
+    precioRegular: indice({ aliases: ["Precio Regular"], fallback: 7 }),
+    precio: indice({ aliases: ["Precio Promoción/Paquete", "Precio Promocion/Paquete", "Precio"], fallback: 8 }),
+    promocion: indice({ aliases: ["Promoción", "Promocion"], fallback: 9 })
   };
 }
 
 function leerCapturasSemana_(sheet, semana) {
   if (!sheet) return { total: 0, rows: [] };
   const lastRow = sheet.getLastRow();
-  const lastColumn = Math.max(9, sheet.getLastColumn());
+  const lastColumn = Math.max(10, sheet.getLastColumn());
   if (!lastRow) return { total: 0, rows: [] };
 
   const primeraFila = sheet.getRange(1, 1, 1, lastColumn).getValues()[0].map(texto_);
@@ -265,6 +267,7 @@ function leerCapturasSemana_(sheet, semana) {
       codigo: texto_(r[columnas.codigo]),
       producto: texto_(r[columnas.producto]),
       marca: texto_(r[columnas.marca]),
+      precioRegular: texto_(r[columnas.precioRegular]),
       precio: texto_(r[columnas.precio]),
       promocion: texto_(r[columnas.promocion])
     }))
