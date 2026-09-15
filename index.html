@@ -1504,6 +1504,7 @@
     const preciosRegularesMem = new Map();
     const preciosPromocionMem = new Map();
     const promosMem = new Map();
+    const ultimosPreciosMem = new Map();
 
     // Restoring maps from localStorage
     const localPreciosRegulares = localStorage.getItem('storecheck_precios_regulares');
@@ -1528,10 +1529,10 @@
       } catch(e) {}
     }
 
-    function claveItem(cadena, it){
+    function claveItem(cadena, it, estado = selEstado.value){
       const cod = (it.codigo || '').trim();
-      if(cod) return `${cadena}::${cod}`;
-      return `${cadena}::${it.producto || ''}::${it.marca || ''}`;
+      if(cod) return `${cadena}::${estado || ''}::${cod}`;
+      return `${cadena}::${estado || ''}::${it.producto || ''}::${it.marca || ''}`;
     }
 
     function mostrarMsg(tipo,txt){
@@ -1702,7 +1703,9 @@
         let promoSel=node.querySelector('.promo');
         const key = claveItem(cadena, it);
 
-        precioRegularInput.value = preciosRegularesMem.get(key) || '';
+        precioRegularInput.value = preciosRegularesMem.has(key)
+          ? preciosRegularesMem.get(key)
+          : (ultimosPreciosMem.get(key) || '');
         promoSel.value = promosMem.get(key) || PROMOCIONES[0];
 
         function actualizarPrecioPromocion(){
@@ -1780,6 +1783,42 @@
     }
 
     /* === EVENTOS DE SELECTORES === */
+    function claveCacheUltimosPrecios(cadena, estado){
+      return `storecheck_ultimos_precios::${cadena}::${estado}`;
+    }
+
+    function aplicarUltimosPrecios(cadena, estado, precios){
+      (Array.isArray(precios) ? precios : []).forEach(item => {
+        const codigo = limpiarTexto(item.codigo);
+        const precio = normalizarPrecio(item.precioRegular);
+        if(codigo && precio) ultimosPreciosMem.set(`${cadena}::${estado}::${codigo}`, precio);
+      });
+    }
+
+    async function cargarUltimosPrecios(cadena, estado){
+      if(!cadena || !estado) return;
+      const cacheKey = claveCacheUltimosPrecios(cadena, estado);
+      let cacheLocal = [];
+      try {
+        cacheLocal = JSON.parse(localStorage.getItem(cacheKey) || '[]');
+        aplicarUltimosPrecios(cadena, estado, cacheLocal);
+      } catch(err) {}
+
+      if(!navigator.onLine) return;
+      try {
+        const params = new URLSearchParams({ action: 'ultimosPrecios', cadena, estado });
+        const res = await fetch(`${ENDPOINT}?${params}`, { cache: 'no-store' });
+        if(!res.ok) throw new Error('No se pudieron consultar los últimos precios.');
+        const json = await res.json();
+        if(!json.ok) throw new Error(json.error || 'No se pudieron consultar los últimos precios.');
+        const precios = Array.isArray(json.precios) ? json.precios : [];
+        localStorage.setItem(cacheKey, JSON.stringify(precios));
+        aplicarUltimosPrecios(cadena, estado, precios);
+      } catch(err) {
+        console.warn('Se usarán los últimos precios guardados en el dispositivo:', err);
+      }
+    }
+
     selCadena.addEventListener('change', async ()=>{
       const cadena = selCadena.value;
       localStorage.setItem('storecheck_cadena', cadena);
@@ -1792,6 +1831,8 @@
 
       try {
         await cargarProductosCadena(cadena);
+        if(selCadena.value !== cadena) return;
+        await cargarUltimosPrecios(cadena, selEstado.value);
         if(selCadena.value !== cadena) return;
         poblarFamilias(cadena);
         cargarTabla(cadena, '');
@@ -1810,8 +1851,13 @@
       cargarTabla(selCadena.value, selFamilia.value);
     });
 
-    selEstado.addEventListener('change', () => {
-      localStorage.setItem('storecheck_estado', selEstado.value);
+    selEstado.addEventListener('change', async () => {
+      const estado = selEstado.value;
+      const cadena = selCadena.value;
+      localStorage.setItem('storecheck_estado', estado);
+      await cargarUltimosPrecios(cadena, estado);
+      if(selEstado.value !== estado || selCadena.value !== cadena) return;
+      if(cadena) cargarTabla(cadena, selFamilia.value);
     });
 
     btnLimpiar.addEventListener('click',()=>{
@@ -1946,7 +1992,7 @@
       }
     }
 
-    const ENDPOINT = "https://script.google.com/macros/s/AKfycbwagRj34n-2Tdg-YI4ZjvRjYAmwWmTi-c91-Z-RHMo7_aKViqVdcA4QJshhizCcdaw/exec";
+    const ENDPOINT = "https://script.google.com/macros/s/AKfycbwtvFHeTVAWtqmh_DfXgZoKAksokXkkP7_rQS4dKXoVeYiEzxh4j4pax_QKN5HK07ESDA/exec";
     const API_TOKEN = "10152021"; // el mismo del Apps Script
     const DASHBOARD_PASSWORD = 'supervisor2026'; // Cambia esta contraseña antes de publicar.
     const DASHBOARD_SESSION_KEY = 'storecheck_dashboard_access';

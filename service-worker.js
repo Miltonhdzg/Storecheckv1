@@ -1,4 +1,4 @@
-const APP_CACHE = 'storecheck-app-v1';
+const APP_CACHE = 'storecheck-app-v2';
 const APP_SHELL = [
   './',
   './index.html',

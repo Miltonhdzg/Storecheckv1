@@ -38,6 +38,23 @@ function doGet(e) {
       return obtenerDashboardSemanal_(e.parameter || {});
     }
 
+    if (action === "ultimosPrecios") {
+      const cadena = texto_(e.parameter.cadena);
+      const estado = texto_(e.parameter.estado);
+      if (!cadena || !estado) {
+        return json_({ ok: false, error: "Selecciona cadena y estado" });
+      }
+      const ss = SpreadsheetApp.getActiveSpreadsheet();
+      const sh = ss.getSheetByName(SHEET_NAME);
+      if (!sh) return json_({ ok: false, error: `No existe pestaña ${SHEET_NAME}` });
+      return json_({
+        ok: true,
+        cadena,
+        estado,
+        precios: obtenerUltimosPreciosRegulares_(sh, cadena, estado)
+      });
+    }
+
     return ContentService
       .createTextOutput("OK")
       .setMimeType(ContentService.MimeType.TEXT);
@@ -205,6 +222,41 @@ function leerFilas_(sheet) {
       return obj;
     })
   };
+}
+
+function obtenerUltimosPreciosRegulares_(sheet, cadena, estado) {
+  const lastRow = sheet.getLastRow();
+  const lastColumn = Math.max(10, sheet.getLastColumn());
+  if (lastRow < 2) return [];
+
+  const primeraFila = sheet.getRange(1, 1, 1, lastColumn).getValues()[0].map(texto_);
+  const tieneEncabezados = primeraFila.some(v => /^(fecha|timestamp)$/i.test(v)) &&
+    primeraFila.some(v => /^cadena$/i.test(v));
+  const columnas = obtenerColumnasCaptura_(primeraFila, tieneEncabezados);
+  const dataStartRow = tieneEncabezados ? 2 : 1;
+  const total = lastRow - dataStartRow + 1;
+  if (total <= 0) return [];
+
+  const values = sheet.getRange(dataStartRow, 1, total, lastColumn).getValues();
+  const encontrados = new Set();
+  const precios = [];
+
+  for (let i = values.length - 1; i >= 0; i--) {
+    const row = values[i];
+    if (texto_(row[columnas.cadena]) !== cadena || texto_(row[columnas.estado]) !== estado) continue;
+    const codigo = texto_(row[columnas.codigo]);
+    const precioRegular = texto_(row[columnas.precioRegular]);
+    if (!codigo || !precioRegular || encontrados.has(codigo)) continue;
+    encontrados.add(codigo);
+    const fecha = normalizarFecha_(row[columnas.fecha]);
+    precios.push({
+      codigo,
+      precioRegular,
+      fecha: fecha ? Utilities.formatDate(fecha, Session.getScriptTimeZone(), "yyyy-MM-dd HH:mm") : ""
+    });
+  }
+
+  return precios;
 }
 
 function obtenerColumnasCaptura_(primeraFila, tieneEncabezados) {
